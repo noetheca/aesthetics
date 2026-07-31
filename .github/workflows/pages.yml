@@ -41,6 +41,7 @@ jobs:
       - name: Install and build
         run: |
           pnpm --dir knowledge-engine install --frozen-lockfile
+          pnpm --dir knowledge-engine build
           pnpm --dir aesthetics install --frozen-lockfile
           pnpm --dir aesthetics build
       - name: Configure Pages
