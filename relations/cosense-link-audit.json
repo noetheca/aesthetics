@@ -1899,25 +1899,6 @@
       "sourcePageId": "6977addd521bdf0ca3c5a23f",
       "sourcePageTitle": "このProject（美学ウィキ）について。",
       "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%93%E3%81%AEProject%EF%BC%88%E7%BE%8E%E5%AD%A6%E3%82%A6%E3%82%A3%E3%82%AD%EF%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%82",
-      "linkTitle": "ディスカッション",
-      "resolution": "source-not-concept",
-      "evidence": {
-        "kind": "source-snapshot-line",
-        "locale": "ja",
-        "sourcePageId": "6977addd521bdf0ca3c5a23f",
-        "sourcePageTitle": "このProject（美学ウィキ）について。",
-        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%93%E3%81%AEProject%EF%BC%88%E7%BE%8E%E5%AD%A6%E3%82%A6%E3%82%A3%E3%82%AD%EF%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%82",
-        "sourceUpdated": 1771131559,
-        "sourceTextSha256": "fb30a17da327e5e033e0d31c7e85b0ff1c8799d14ec0ff30c374db3d86d3cddd",
-        "lineNumber": 25,
-        "lineText": "広範囲に影響した問題とその対応については[ディスカッション]にて行っています。",
-        "linkTitle": "ディスカッション"
-      }
-    },
-    {
-      "sourcePageId": "6977addd521bdf0ca3c5a23f",
-      "sourcePageTitle": "このProject（美学ウィキ）について。",
-      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%93%E3%81%AEProject%EF%BC%88%E7%BE%8E%E5%AD%A6%E3%82%A6%E3%82%A3%E3%82%AD%EF%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%82",
       "linkTitle": "テンプレート",
       "resolution": "source-not-concept",
       "evidence": {
@@ -1931,6 +1912,25 @@
         "lineNumber": 29,
         "lineText": "　[テンプレート]をコピペします。",
         "linkTitle": "テンプレート"
+      }
+    },
+    {
+      "sourcePageId": "6977addd521bdf0ca3c5a23f",
+      "sourcePageTitle": "このProject（美学ウィキ）について。",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%93%E3%81%AEProject%EF%BC%88%E7%BE%8E%E5%AD%A6%E3%82%A6%E3%82%A3%E3%82%AD%EF%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%82",
+      "linkTitle": "ディスカッション",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6977addd521bdf0ca3c5a23f",
+        "sourcePageTitle": "このProject（美学ウィキ）について。",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%93%E3%81%AEProject%EF%BC%88%E7%BE%8E%E5%AD%A6%E3%82%A6%E3%82%A3%E3%82%AD%EF%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%82",
+        "sourceUpdated": 1771131559,
+        "sourceTextSha256": "fb30a17da327e5e033e0d31c7e85b0ff1c8799d14ec0ff30c374db3d86d3cddd",
+        "lineNumber": 25,
+        "lineText": "広範囲に影響した問題とその対応については[ディスカッション]にて行っています。",
+        "linkTitle": "ディスカッション"
       }
     },
     {
@@ -2070,25 +2070,6 @@
       "sourcePageId": "697d42f4bacf9a035f7a1583",
       "sourcePageTitle": "Liminal space",
       "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
-      "linkTitle": "found footage",
-      "resolution": "target-not-in-snapshot",
-      "evidence": {
-        "kind": "source-snapshot-line",
-        "locale": "ja",
-        "sourcePageId": "697d42f4bacf9a035f7a1583",
-        "sourcePageTitle": "Liminal space",
-        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
-        "sourceUpdated": 1782721979,
-        "sourceTextSha256": "760a3439565e0f83d5bd49dee68c438e6380e2bd52925953fe2279cbb8313f2e",
-        "lineNumber": 20,
-        "lineText": "『[The Backrooms https://youtu.be/H4dGpz6cnHo?si=SvVqzdeYYRANS9pu]』はLiminal spaceをモチーフに[Analog horror]と接続した具体的なコンテンツであり、この作品の派生としてLiminal spaceではしばしばホラー表現やVHSノイズなどの[モキュメンタリー]、[found footage]の要素を含みます。",
-        "linkTitle": "found footage"
-      }
-    },
-    {
-      "sourcePageId": "697d42f4bacf9a035f7a1583",
-      "sourcePageTitle": "Liminal space",
-      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
       "linkTitle": "Mallsoft",
       "resolution": "target-not-in-snapshot",
       "evidence": {
@@ -2121,6 +2102,25 @@
         "lineNumber": 15,
         "lineText": "また、インターネット風景系概念でよく見られる、ある一アカウントの名前が美学を表し、そのフォロワーがつくことで広まる現象が見られます（[WaterDreamCore][例 https://x.com/dwururu_0311/status/2060502357562314971]）。",
         "linkTitle": "WaterDreamCore"
+      }
+    },
+    {
+      "sourcePageId": "697d42f4bacf9a035f7a1583",
+      "sourcePageTitle": "Liminal space",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+      "linkTitle": "found footage",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d42f4bacf9a035f7a1583",
+        "sourcePageTitle": "Liminal space",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+        "sourceUpdated": 1782721979,
+        "sourceTextSha256": "760a3439565e0f83d5bd49dee68c438e6380e2bd52925953fe2279cbb8313f2e",
+        "lineNumber": 20,
+        "lineText": "『[The Backrooms https://youtu.be/H4dGpz6cnHo?si=SvVqzdeYYRANS9pu]』はLiminal spaceをモチーフに[Analog horror]と接続した具体的なコンテンツであり、この作品の派生としてLiminal spaceではしばしばホラー表現やVHSノイズなどの[モキュメンタリー]、[found footage]の要素を含みます。",
+        "linkTitle": "found footage"
       }
     },
     {
@@ -2583,25 +2583,6 @@
       "sourcePageId": "6982546ca315cce9205b32fb",
       "sourcePageTitle": "メモ",
       "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
-      "linkTitle": "corporate memphis",
-      "resolution": "source-not-concept",
-      "evidence": {
-        "kind": "source-snapshot-line",
-        "locale": "ja",
-        "sourcePageId": "6982546ca315cce9205b32fb",
-        "sourcePageTitle": "メモ",
-        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
-        "sourceUpdated": 1779225813,
-        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
-        "lineNumber": 5,
-        "lineText": "[corporate memphis][Signalwave][Balletcore][Silicon Dreams]",
-        "linkTitle": "corporate memphis"
-      }
-    },
-    {
-      "sourcePageId": "6982546ca315cce9205b32fb",
-      "sourcePageTitle": "メモ",
-      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
       "linkTitle": "Signalwave",
       "resolution": "source-not-concept",
       "evidence": {
@@ -2678,6 +2659,44 @@
       "sourcePageId": "6982546ca315cce9205b32fb",
       "sourcePageTitle": "メモ",
       "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "corporate memphis",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 5,
+        "lineText": "[corporate memphis][Signalwave][Balletcore][Silicon Dreams]",
+        "linkTitle": "corporate memphis"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "ゆっくり実況",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 13,
+        "lineText": "[ゆっくり実況]: 既にフォーマットそのものへの自己言及などは行われていますが、まだ体系的に書くことができません。もし詳しい人がいたらページを作っても良いです。",
+        "linkTitle": "ゆっくり実況"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
       "linkTitle": "アキバ系",
       "resolution": "source-not-concept",
       "evidence": {
@@ -2716,7 +2735,7 @@
       "sourcePageId": "6982546ca315cce9205b32fb",
       "sourcePageTitle": "メモ",
       "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
-      "linkTitle": "ゆっくり実況",
+      "linkTitle": "平成レトロ",
       "resolution": "source-not-concept",
       "evidence": {
         "kind": "source-snapshot-line",
@@ -2726,9 +2745,9 @@
         "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
         "sourceUpdated": 1779225813,
         "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
-        "lineNumber": 13,
-        "lineText": "[ゆっくり実況]: 既にフォーマットそのものへの自己言及などは行われていますが、まだ体系的に書くことができません。もし詳しい人がいたらページを作っても良いです。",
-        "linkTitle": "ゆっくり実況"
+        "lineNumber": 12,
+        "lineText": "[平成レトロ]:「Heisei Retro」はAesthetics Wikiを含め90年～2010年の日本への異国情緒を基調としており、国内での「平成レトロ」の受容を別途記述する必要があります。しかし、その内容は大半が個別にページを作成すべきかもしれません。",
+        "linkTitle": "平成レトロ"
       }
     },
     {
@@ -2767,25 +2786,6 @@
         "lineNumber": 4,
         "lineText": "[病みカワ][アキバ系][渋谷系]",
         "linkTitle": "病みカワ"
-      }
-    },
-    {
-      "sourcePageId": "6982546ca315cce9205b32fb",
-      "sourcePageTitle": "メモ",
-      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
-      "linkTitle": "平成レトロ",
-      "resolution": "source-not-concept",
-      "evidence": {
-        "kind": "source-snapshot-line",
-        "locale": "ja",
-        "sourcePageId": "6982546ca315cce9205b32fb",
-        "sourcePageTitle": "メモ",
-        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
-        "sourceUpdated": 1779225813,
-        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
-        "lineNumber": 12,
-        "lineText": "[平成レトロ]:「Heisei Retro」はAesthetics Wikiを含め90年～2010年の日本への異国情緒を基調としており、国内での「平成レトロ」の受容を別途記述する必要があります。しかし、その内容は大半が個別にページを作成すべきかもしれません。",
-        "linkTitle": "平成レトロ"
       }
     },
     {
@@ -3286,7 +3286,7 @@
       "sourcePageId": "69c81457a3c48bf205fc9e81",
       "sourcePageTitle": "インターネット風景系概念",
       "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
-      "linkTitle": "生活core",
+      "linkTitle": "包写体",
       "resolution": "target-not-in-snapshot",
       "evidence": {
         "kind": "source-snapshot-line",
@@ -3296,9 +3296,9 @@
         "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
         "sourceUpdated": 1783936931,
         "sourceTextSha256": "b4ae39632706ec357609942e9a213fe88ec3ad52d2ba9f02502460f6c70837d9",
-        "lineNumber": 20,
-        "lineText": "「[生活core]」はendenによって提唱された写真表現のジャンルです。",
-        "linkTitle": "生活core"
+        "lineNumber": 12,
+        "lineText": "タグには[EchoSpace](Yurei Landscape,アシアタ,tellur, 2024年),[微風ゾーン](微風ゾーン, 2021年)といった風景の感覚、クロップを基調とし具体的な被写体が決まっている[StructuredSkyframe](都市構造, 2025年)[包写体](notarica, 2024年)など更に被写体に着目した[トマソン]的カテゴライズや、Blenderでモデリング・レンダリングされたような現実空間写真の表現である[Blenderic](notarica, 2025年)がよく利用されています。",
+        "linkTitle": "包写体"
       }
     },
     {
@@ -3324,7 +3324,7 @@
       "sourcePageId": "69c81457a3c48bf205fc9e81",
       "sourcePageTitle": "インターネット風景系概念",
       "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
-      "linkTitle": "包写体",
+      "linkTitle": "生活core",
       "resolution": "target-not-in-snapshot",
       "evidence": {
         "kind": "source-snapshot-line",
@@ -3334,9 +3334,9 @@
         "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
         "sourceUpdated": 1783936931,
         "sourceTextSha256": "b4ae39632706ec357609942e9a213fe88ec3ad52d2ba9f02502460f6c70837d9",
-        "lineNumber": 12,
-        "lineText": "タグには[EchoSpace](Yurei Landscape,アシアタ,tellur, 2024年),[微風ゾーン](微風ゾーン, 2021年)といった風景の感覚、クロップを基調とし具体的な被写体が決まっている[StructuredSkyframe](都市構造, 2025年)[包写体](notarica, 2024年)など更に被写体に着目した[トマソン]的カテゴライズや、Blenderでモデリング・レンダリングされたような現実空間写真の表現である[Blenderic](notarica, 2025年)がよく利用されています。",
-        "linkTitle": "包写体"
+        "lineNumber": 20,
+        "lineText": "「[生活core]」はendenによって提唱された写真表現のジャンルです。",
+        "linkTitle": "生活core"
       }
     }
   ]

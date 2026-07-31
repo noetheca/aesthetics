@@ -59,6 +59,21 @@ export function normalizeTitle(title) {
     .toLocaleLowerCase("en-US");
 }
 
+export function compareUnicodeCodePoints(left, right) {
+  const leftPoints = Array.from(left, (character) => character.codePointAt(0));
+  const rightPoints = Array.from(right, (character) => character.codePointAt(0));
+  const sharedLength = Math.min(leftPoints.length, rightPoints.length);
+
+  for (let index = 0; index < sharedLength; index += 1) {
+    const difference = leftPoints[index] - rightPoints[index];
+    if (difference !== 0) {
+      return difference;
+    }
+  }
+
+  return leftPoints.length - rightPoints.length;
+}
+
 export function sourcePageUrl(project, title) {
   return `${API_ORIGIN}/${encodeURIComponent(project)}/${encodeURIComponent(title)}`;
 }
@@ -239,7 +254,7 @@ async function fetchPageList(project) {
 function listSignature(pages) {
   return pages
     .map(({ id, title, updated }) => ({ id, title, updated }))
-    .sort((left, right) => left.id.localeCompare(right.id));
+    .sort((left, right) => compareUnicodeCodePoints(left.id, right.id));
 }
 
 function normalizedPage(project, summary, detail) {
@@ -299,7 +314,9 @@ export async function fetchSnapshot(project = DEFAULT_PROJECT) {
     },
     fetchedAt,
     pageCount: pages.length,
-    pages: pages.sort((left, right) => left.id.localeCompare(right.id)),
+    pages: pages.sort((left, right) =>
+      compareUnicodeCodePoints(left.id, right.id),
+    ),
   };
 }
 
@@ -422,10 +439,11 @@ export function buildRelationAudit(snapshot) {
   }
 
   const sortedCandidates = [...candidates.values()].sort((left, right) =>
-    left.id.localeCompare(right.id),
+    compareUnicodeCodePoints(left.id, right.id),
   );
   skippedLinks.sort((left, right) =>
-    `${left.sourcePageId}:${left.linkTitle}`.localeCompare(
+    compareUnicodeCodePoints(
+      `${left.sourcePageId}:${left.linkTitle}`,
       `${right.sourcePageId}:${right.linkTitle}`,
     ),
   );
@@ -590,7 +608,7 @@ export async function renderSnapshot(snapshot, root = process.cwd()) {
         ]),
       ),
       pages: pageMap.sort((left, right) =>
-        left.sourcePageId.localeCompare(right.sourcePageId),
+        compareUnicodeCodePoints(left.sourcePageId, right.sourcePageId),
       ),
     },
   );
