@@ -15,6 +15,33 @@ const PROJECT_META_TITLES = new Set([
   "メモ",
 ]);
 
+const RELATION_OVERRIDES = new Map([
+  [
+    "6977ad0e5f88b7abe4a99125:6977e691e21794c7cae4c3ba",
+    {
+      relationType: "influenced-by",
+      direction: "directed",
+      reviewStatus: "needs-evidence",
+      confidence: "low",
+      basis: "explicit-source-wording",
+      rationale:
+        "元ページ本文はFrutiger Aeroからの影響を明記しているが、独立した出典確認は未完了。",
+    },
+  ],
+  [
+    "6977f104df1b80cff76f6bf6:69998a0b58b8fa96506687d3",
+    {
+      relationType: "influenced-by",
+      direction: "directed",
+      reviewStatus: "needs-evidence",
+      confidence: "low",
+      basis: "explicit-source-wording",
+      rationale:
+        "元ページ本文はOld Webを明確な参照元と述べるが、独立した出典確認は未完了。",
+    },
+  ],
+]);
+
 function delay(milliseconds) {
   return new Promise((resolveDelay) => setTimeout(resolveDelay, milliseconds));
 }
@@ -287,23 +314,156 @@ function titleIndex(pages) {
   return index;
 }
 
-function relatedConceptIds(page, byTitle, classifications) {
-  const related = new Set();
-  for (const link of page.links) {
-    const matches = byTitle.get(normalizeTitle(link)) ?? [];
-    if (matches.length !== 1) {
-      continue;
-    }
-    const target = matches[0];
-    const classification = classifications.get(target.id);
-    if (
-      target.id !== page.id &&
-      (classification === "content" || classification === "stub")
-    ) {
-      related.add(buildConceptId(target.id));
+function isConceptClassification(classification) {
+  return classification === "content" || classification === "stub";
+}
+
+function linkEvidence(page, linkTitle) {
+  const normalizedLink = normalizeTitle(linkTitle);
+  const lineIndex = page.lines.findIndex((line) => {
+    const normalizedTag = line.trim().startsWith("#")
+      ? normalizeTitle(line.trim().slice(1))
+      : undefined;
+    return (
+      normalizedTag === normalizedLink ||
+      [...line.matchAll(/\[([^\[\]]+)\]/gu)].some((match) => {
+        const value = match[1].trim();
+        return (
+          !value.startsWith("/") &&
+          !/^\*+\s/u.test(value) &&
+          !/https?:\/\//u.test(value) &&
+          normalizeTitle(value) === normalizedLink
+        );
+      })
+    );
+  });
+  return {
+    kind: "source-snapshot-line",
+    locale: "ja",
+    sourcePageId: page.id,
+    sourcePageTitle: page.title,
+    sourceUrl: page.sourceUrl,
+    sourceUpdated: page.updated,
+    sourceTextSha256: page.textSha256,
+    lineNumber: lineIndex >= 0 ? lineIndex + 1 : null,
+    lineText: lineIndex >= 0 ? page.lines[lineIndex] : null,
+    linkTitle,
+  };
+}
+
+export function buildRelationAudit(snapshot) {
+  const classifications = new Map(
+    snapshot.pages.map((page) => [page.id, classifyPage(page)]),
+  );
+  const byTitle = titleIndex(snapshot.pages);
+  const candidates = new Map();
+  const skippedLinks = [];
+  let eligibleLinkReferences = 0;
+
+  for (const page of snapshot.pages) {
+    const sourceClassification = classifications.get(page.id);
+    for (const linkTitle of page.links) {
+      const evidence = linkEvidence(page, linkTitle);
+      const matches = byTitle.get(normalizeTitle(linkTitle)) ?? [];
+      let resolution;
+      let target;
+
+      if (!isConceptClassification(sourceClassification)) {
+        resolution = "source-not-concept";
+      } else if (matches.length === 0) {
+        resolution = "target-not-in-snapshot";
+      } else if (matches.length > 1) {
+        resolution = "ambiguous-target-title";
+      } else {
+        [target] = matches;
+        const targetClassification = classifications.get(target.id);
+        if (!isConceptClassification(targetClassification)) {
+          resolution = "target-not-concept";
+        } else if (target.id === page.id) {
+          resolution = "self-link";
+        }
+      }
+
+      if (resolution || !target) {
+        skippedLinks.push({
+          sourcePageId: page.id,
+          sourcePageTitle: page.title,
+          sourceUrl: page.sourceUrl,
+          linkTitle,
+          resolution: resolution ?? "unresolved",
+          evidence,
+        });
+        continue;
+      }
+
+      eligibleLinkReferences += 1;
+      const key = `${page.id}:${target.id}`;
+      const override = RELATION_OVERRIDES.get(key);
+      const existing = candidates.get(key);
+      if (existing) {
+        existing.evidence.push(evidence);
+        continue;
+      }
+      candidates.set(key, {
+        id: `cosense-link:${page.id}:${target.id}`,
+        sourceConceptId: buildConceptId(page.id),
+        targetConceptId: buildConceptId(target.id),
+        relationType: override?.relationType ?? "associated-with",
+        direction: override?.direction ?? "undirected",
+        reviewStatus: override?.reviewStatus ?? "unreviewed",
+        confidence: override?.confidence ?? "unassessed",
+        basis: override?.basis ?? "same-project-link",
+        rationale:
+          override?.rationale ??
+          "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+        evidence: [evidence],
+      });
     }
   }
-  return [...related].sort();
+
+  const sortedCandidates = [...candidates.values()].sort((left, right) =>
+    left.id.localeCompare(right.id),
+  );
+  skippedLinks.sort((left, right) =>
+    `${left.sourcePageId}:${left.linkTitle}`.localeCompare(
+      `${right.sourcePageId}:${right.linkTitle}`,
+    ),
+  );
+
+  return {
+    schemaVersion: 1,
+    taxonomyVersion: 1,
+    generatedFrom: {
+      snapshot: `source/cosense/${snapshot.source.project}.json`,
+      sourceProject: snapshot.source.project,
+      sourceProjectUrl: snapshot.source.projectUrl,
+      fetchedAt: snapshot.fetchedAt,
+      license: "CC-BY-SA-4.0",
+      attribution: "AestheticsWiki contributors",
+      modifications:
+        "Resolved internal link targets and recorded review-only relation candidates with source-line evidence.",
+    },
+    policy: {
+      defaultRelationType: "associated-with",
+      defaultReviewStatus: "unreviewed",
+      publicGraphPromotion: "human-review-required",
+      documentation: "docs/relationship-model.md",
+    },
+    counts: {
+      sourceLinkReferences: snapshot.pages.reduce(
+        (count, page) => count + page.links.length,
+        0,
+      ),
+      eligibleLinkReferences,
+      candidateRelations: sortedCandidates.length,
+      explicitWordingCandidates: sortedCandidates.filter(
+        ({ basis }) => basis === "explicit-source-wording",
+      ).length,
+      skippedLinks: skippedLinks.length,
+    },
+    candidates: sortedCandidates,
+    skippedLinks,
+  };
 }
 
 function importNotice(page) {
@@ -361,7 +521,6 @@ export async function renderSnapshot(snapshot, root = process.cwd()) {
   const classifications = new Map(
     snapshot.pages.map((page) => [page.id, classifyPage(page)]),
   );
-  const byTitle = titleIndex(snapshot.pages);
   const pageMap = [];
 
   for (const page of snapshot.pages) {
@@ -372,7 +531,7 @@ export async function renderSnapshot(snapshot, root = process.cwd()) {
         schemaVersion: 1,
         id: buildConceptId(page.id),
         prerequisites: [],
-        related: relatedConceptIds(page, byTitle, classifications),
+        related: [],
       };
       const status = classification === "stub" ? "draft" : "review";
       await writeJson(resolve(root, directory, "concept.yaml"), metadata);
@@ -434,6 +593,10 @@ export async function renderSnapshot(snapshot, root = process.cwd()) {
         left.sourcePageId.localeCompare(right.sourcePageId),
       ),
     },
+  );
+  await writeJson(
+    resolve(root, "relations/cosense-link-audit.json"),
+    buildRelationAudit(snapshot),
   );
   return pageMap;
 }

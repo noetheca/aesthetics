@@ -22,10 +22,17 @@ character count is below 200. Classification is reviewable in
 
 ## Links and media
 
-The source API reported 151 same-project link edges. Only links that resolve
-unambiguously to an imported content or stub page become `related`
-relationships. Unresolved links remain source-page links in the Markdown,
-because Cosense intentionally supports links to pages that do not yet exist.
+The source API reported 151 same-project link references. Of these, 74 resolve
+unambiguously between imported content or stub concepts. They are recorded as
+review-only candidates in `relations/cosense-link-audit.json`, not asserted as
+`related`, prerequisite, influence, or inheritance relationships. The other
+77 references point from/to non-concepts or unresolved pages and remain in the
+audit and source Markdown.
+
+Two candidates have explicit relationship wording in the imported text and
+are provisionally classified as low-confidence `influenced-by` candidates.
+They still require evidence and human review. See
+[`relationship-model.md`](relationship-model.md).
 
 The source text referenced 7 external image URLs, 212 external video URLs, and
 2 `scrapbox.io/files` URLs during pre-import review. The importer converts these

@@ -27,6 +27,13 @@ free of raw iframes.
 See [`docs/import-report.md`](docs/import-report.md) and
 [`docs/import-policy.md`](docs/import-policy.md).
 
+Internal wiki links are retained as auditable relationship candidates rather
+than treated as verified historical facts. The proposed aesthetics-specific
+taxonomy and migration plan are documented in
+[`docs/relationship-model.md`](docs/relationship-model.md), with the
+machine-readable audit at
+[`relations/cosense-link-audit.json`](relations/cosense-link-audit.json).
+
 ## Development
 
 Place this repository next to `knowledge-engine`, then run:
