@@ -1,0 +1,139 @@
+---
+import ConceptRelations from "@noetheca/knowledge-engine/components/ConceptRelations.astro";
+import KnowledgeLayout from "@noetheca/knowledge-engine/components/KnowledgeLayout.astro";
+import { type Concept } from "@noetheca/knowledge-engine";
+import { render, type CollectionEntry } from "astro:content";
+import { loadConceptEntries } from "../lib/concept-entries";
+import { conceptRoute, withBase } from "../lib/routes";
+import "../styles/aesthetics.css";
+
+interface Props {
+  entry: CollectionEntry<"concepts">;
+  concept: Concept;
+  relationTitles: Record<string, string>;
+}
+
+export async function getStaticPaths() {
+  const records = await loadConceptEntries();
+  const translations = new Map(
+    records.map(({ entry, concept }) => [
+      `${concept.metadata.id}:${entry.data.locale}`,
+      entry,
+    ]),
+  );
+
+  return records.map(({ entry, concept }) => {
+    const relationTitles = Object.fromEntries(
+      [...concept.metadata.prerequisites, ...concept.metadata.related]
+        .map((id) => [
+          id,
+          translations.get(`${id}:${entry.data.locale}`)?.data.title,
+        ])
+        .filter((pair): pair is [string, string] => pair[1] !== undefined),
+    );
+    return {
+      params: {
+        slug: conceptRoute(entry.data.locale, concept.metadata.id),
+      },
+      props: { entry, concept, relationTitles },
+    };
+  });
+}
+
+const { entry, concept, relationTitles } = Astro.props;
+const { Content } = await render(entry);
+const locale = entry.data.locale;
+
+function relation(id: string) {
+  const title = relationTitles[id];
+  return {
+    id,
+    title,
+    href: title ? withBase(conceptRoute(locale, id)) : undefined,
+  };
+}
+
+const sourcePath = entry.filePath?.replaceAll("\\", "/");
+const editUrl = sourcePath
+  ? `https://github.com/noetheca/aesthetics/edit/main/${sourcePath}`
+  : "https://github.com/noetheca/aesthetics";
+---
+
+<KnowledgeLayout
+  title={entry.data.title}
+  summary={entry.data.summary}
+  locale={locale}
+>
+  <article>
+    <p class="eyebrow">{concept.metadata.id}</p>
+    <h1>{entry.data.title}</h1>
+    <p class="lede">{entry.data.summary}</p>
+    <p class="content-state">
+      <span>状態: {entry.data.status}</span>
+      <a href={editUrl}>GitHubで編集</a>
+      <a href="https://github.com/noetheca/aesthetics/issues/new/choose">
+        Issueを作成
+      </a>
+    </p>
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    <ConceptRelations
+      prerequisites={concept.metadata.prerequisites.map(relation)}
+      related={concept.metadata.related.map(relation)}
+    />
+
+    <section aria-labelledby="sources">
+      <h2 id="sources">出典・帰属</h2>
+      <ul>
+        {
+          entry.data.sources.map((source) => (
+            <li>
+              {typeof source === "string" ? (
+                <a href={source}>{source}</a>
+              ) : (
+                <>
+                  <a href={source.url}>{source.title}</a>
+                  {source.note && <span class="source-note"> — {source.note}</span>}
+                </>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+      <p class="muted">
+        移植本文はCC BY-SA 4.0。外部画像・動画・リンク先は対象外です。
+      </p>
+    </section>
+  </article>
+</KnowledgeLayout>
+
+<style>
+  .content-state {
+    align-items: center;
+    border-block: 1px solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+    margin-block: 2rem;
+    padding-block: 0.8rem;
+  }
+
+  .content-state span {
+    background: var(--accent-soft);
+    border-radius: 100vw;
+    color: var(--accent);
+    padding: 0.15rem 0.65rem;
+  }
+
+  .prose {
+    margin-top: 2.5rem;
+  }
+
+  .source-note {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>

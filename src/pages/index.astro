@@ -1,0 +1,155 @@
+---
+import KnowledgeLayout from "@noetheca/knowledge-engine/components/KnowledgeLayout.astro";
+import { loadConceptEntries } from "../lib/concept-entries";
+import { conceptRoute, withBase } from "../lib/routes";
+import "../styles/aesthetics.css";
+
+const records = (await loadConceptEntries()).sort((left, right) =>
+  left.entry.data.title.localeCompare(right.entry.data.title, "ja"),
+);
+const reviewCount = records.filter(
+  ({ entry }) => entry.data.status === "review",
+).length;
+const draftCount = records.filter(
+  ({ entry }) => entry.data.status === "draft",
+).length;
+---
+
+<KnowledgeLayout
+  title="美学"
+  summary="Internet aestheticsと日本語圏の美学ミームを整理するnoethecaの知識領域です。"
+  locale="ja"
+>
+  <article>
+    <p class="eyebrow">Aesthetics / imported review</p>
+    <h1>美学ミームを、つながりから読む。</h1>
+    <p class="lede">
+      Internet aesthetics、日本語圏の「〜界隈」「〜系」、映像・音楽・デザインの
+      横断的な表現を整理する試作です。初期コンテンツは美学ウィキから許諾に基づいて
+      移植し、すべて人間のレビュー対象としています。
+    </p>
+
+    <dl class="summary">
+      <div>
+        <dt>Review</dt>
+        <dd>{reviewCount}</dd>
+      </div>
+      <div>
+        <dt>Draft / stub</dt>
+        <dd>{draftCount}</dd>
+      </div>
+      <div>
+        <dt>Source</dt>
+        <dd><a href="https://scrapbox.io/AestheticsWiki/">美学ウィキ</a></dd>
+      </div>
+    </dl>
+
+    <aside class="review-note">
+      <strong>インポートレビュー中</strong>
+      <p>
+        Scrapbox記法は機械変換されています。事実、出典、関連、表現、帰属を確認してから
+        <code>published</code>へ移行します。外部メディアは複製せずリンクのみ残しています。
+      </p>
+    </aside>
+
+    <section aria-labelledby="concept-list">
+      <h2 id="concept-list">項目一覧</h2>
+      <ul class="concept-list">
+        {
+          records.map(({ entry, concept }) => (
+            <li>
+              <a
+                href={withBase(
+                  conceptRoute(entry.data.locale, concept.metadata.id),
+                )}
+              >
+                <strong>{entry.data.title}</strong>
+                <span>{entry.data.summary}</span>
+              </a>
+              <small data-status={entry.data.status}>{entry.data.status}</small>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </article>
+</KnowledgeLayout>
+
+<style>
+  .summary {
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    margin-block: 2rem;
+  }
+
+  .summary div {
+    background: color-mix(in srgb, var(--surface) 86%, transparent);
+    border: 1px solid var(--line);
+    border-radius: 0.9rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .summary dt {
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .summary dd {
+    font-size: 1.4rem;
+    font-weight: 750;
+    margin: 0.15rem 0 0;
+  }
+
+  .review-note {
+    background: var(--accent-soft);
+    border-radius: 0.9rem;
+    padding: 1rem 1.1rem;
+  }
+
+  .review-note p {
+    margin-bottom: 0;
+  }
+
+  .concept-list {
+    display: grid;
+    gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .concept-list li {
+    align-items: start;
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    border: 1px solid var(--line);
+    border-radius: 0.8rem;
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 1rem;
+  }
+
+  .concept-list a {
+    display: grid;
+    gap: 0.2rem;
+    min-width: 0;
+    text-decoration: none;
+  }
+
+  .concept-list a span,
+  .concept-list small {
+    color: var(--muted);
+  }
+
+  .concept-list small {
+    border: 1px solid var(--line);
+    border-radius: 100vw;
+    padding: 0.15rem 0.55rem;
+  }
+
+  .concept-list small[data-status="draft"] {
+    border-style: dashed;
+  }
+</style>

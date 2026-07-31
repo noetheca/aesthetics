@@ -1,0 +1,36 @@
+:root {
+  --background: #f4f1ea;
+  --surface: #fffcf5;
+  --text: #1f2421;
+  --muted: #626a64;
+  --line: #cdd3ca;
+  --accent: #146b5b;
+  --accent-soft: #d8eee7;
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% 4%, rgb(255 198 126 / 28%), transparent 22rem),
+    radial-gradient(circle at 88% 12%, rgb(70 179 157 / 18%), transparent 28rem),
+    var(--background);
+}
+
+.site-header {
+  backdrop-filter: blur(0.5rem);
+}
+
+.prose blockquote {
+  background: color-mix(in srgb, var(--accent-soft) 55%, transparent);
+  border-left: 0.25rem solid var(--accent);
+  margin-inline: 0;
+  padding: 0.8rem 1rem;
+}
+
+.prose img,
+.prose iframe {
+  display: none;
+}
+
+.prose a {
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@noetheca/aesthetics",
+  "version": "0.0.0",
+  "license": "MPL-2.0",
+  "private": true,
+  "description": "Internet aesthetics knowledge domain for noetheca.",
+  "type": "module",
+  "scripts": {
+    "engine": "pnpm --dir ../knowledge-engine build",
+    "validate": "pnpm engine && noetheca-knowledge validate concepts",
+    "manifest": "noetheca-knowledge manifest concepts public/manifest.json",
+    "import:cosense": "node scripts/import-cosense.mjs",
+    "test": "node --test",
+    "dev": "pnpm validate && pnpm manifest && astro dev",
+    "build": "pnpm validate && pnpm manifest && astro build",
+    "preview": "astro preview",
+    "typecheck": "astro check",
+    "check": "pnpm typecheck && pnpm test && pnpm build"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "packageManager": "pnpm@11.9.0",
+  "dependencies": {
+    "@noetheca/knowledge-engine": "link:../knowledge-engine",
+    "astro": "7.1.6"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@types/node": "26.1.2",
+    "typescript": "6.0.3"
+  }
+}

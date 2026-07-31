@@ -1,0 +1,32 @@
+schemaVersion: 1
+recordId: SB-2026-0001
+source:
+  service: Cosense/Scrapbox
+  project: AestheticsWiki
+  projectUrl: https://scrapbox.io/AestheticsWiki/
+  snapshot: source/cosense/AestheticsWiki.json
+authors:
+  - displayName: hazuqu
+    role: creator-and-organizer
+  - displayName: AestheticsWiki contributors
+    role: page-contributors
+permission:
+  basis: direct-permission
+  grantedLicense: CC-BY-SA-4.0
+  attestedBy: repository-setup-requester
+  attestedAt: 2026-07-31
+  evidence: private; not stored in this repository
+changes:
+  - Scrapbox notation converted to Markdown on a best-effort basis
+  - stable noetheca IDs assigned from source page IDs
+  - internal links extracted as related-concept candidates
+  - project pages and profiles separated from knowledge concepts
+  - external media retained as links and not downloaded
+targets:
+  - concepts/imported/**
+  - archive/cosense/**
+  - source/cosense/**
+review:
+  permissionEvidence: maintainer-confirmation-required-before-public-release
+  conversion: required
+  factsAndSources: required

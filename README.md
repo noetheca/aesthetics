@@ -8,6 +8,42 @@ The first import is based on the public
 permission reported by the repository setup requester. Imported pages remain
 under review and retain source attribution.
 
+## Import snapshot
+
+The 2026-07-31 snapshot contains 55 source pages:
+
+- 41 substantive pages imported with `review` status;
+- 8 incomplete or explicitly undecided pages imported with `draft` status;
+- 5 project-operation pages and 1 contributor profile preserved in the
+  archive, outside the knowledge graph.
+
+The normalized source snapshot is committed under `source/cosense/`. External
+images and videos remain links; no external media binaries are stored here.
+See [`docs/import-report.md`](docs/import-report.md) and
+[`docs/import-policy.md`](docs/import-policy.md).
+
+## Development
+
+Place this repository next to `knowledge-engine`, then run:
+
+```sh
+pnpm install --frozen-lockfile
+pnpm check
+pnpm dev
+```
+
+To refresh from the public project API:
+
+```sh
+pnpm import:cosense
+```
+
+To reproduce generated files without network access:
+
+```sh
+node scripts/import-cosense.mjs --snapshot source/cosense/AestheticsWiki.json
+```
+
 ## Licensing
 
 Site code is licensed under MPL 2.0. Knowledge content, normalized source
