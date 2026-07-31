@@ -32,6 +32,12 @@ The source text referenced 7 external image URLs, 212 external video URLs, and
 to ordinary links. It generated no Markdown image embeds, raw active media
 elements, or downloaded media files.
 
+The aesthetics renderer may enhance a paragraph containing only YouTube video
+links (`watch`, `youtu.be`, `shorts`, or `live`) into lazy,
+privacy-enhanced embeds. This happens in an Astro remark plugin, keeps start
+times, preserves the original link as a caption, and does not modify imported
+Markdown. Channel, playlist, invalid, and inline citation links stay links.
+
 ## Known conversion limits
 
 Cosense bracket syntax is converted on a best-effort basis. Headings, internal

@@ -2,6 +2,7 @@
 import { createKnowledgeGraphModel } from "@noetheca/knowledge-engine";
 import KnowledgeGraph from "@noetheca/knowledge-engine/components/KnowledgeGraph.astro";
 import KnowledgeLayout from "@noetheca/knowledge-engine/components/KnowledgeLayout.astro";
+import { extractAestheticsContext } from "../lib/aesthetics-context";
 import { loadConceptEntries } from "../lib/concept-entries";
 import { siteLanguages } from "../lib/languages";
 import { conceptRoute, withBase } from "../lib/routes";
@@ -13,6 +14,23 @@ const records = (await loadConceptEntries())
   .sort((left, right) =>
     left.entry.data.title.localeCompare(right.entry.data.title, locale),
   );
+const chronology: Record<string, number> = {};
+const thumbnails: Record<string, string> = {};
+const contextFacts: Record<
+  string,
+  readonly { label: string; value: string }[]
+> = {};
+for (const { concept, translation } of records) {
+  const id = concept.metadata.id;
+  const context = extractAestheticsContext(translation.body);
+  if (context.chronology !== undefined) {
+    chronology[id] = context.chronology;
+  }
+  if (context.thumbnail !== undefined) {
+    thumbnails[id] = context.thumbnail;
+  }
+  contextFacts[id] = [{ label: "時期", value: context.periodRaw }];
+}
 const graph = createKnowledgeGraphModel(
   records.map(({ entry, concept }) => ({
     id: concept.metadata.id,
@@ -36,6 +54,10 @@ const graph = createKnowledgeGraphModel(
 >
   <KnowledgeGraph
     graph={graph}
+    chronology={chronology}
+    thumbnails={thumbnails}
+    contextFacts={contextFacts}
+    controls
     locale={locale}
     title="美学 文脈マップ"
     relationshipMode="contextual"
@@ -43,7 +65,7 @@ const graph = createKnowledgeGraphModel(
     labels={{
       viewportLabel: "美学の関係と文脈をたどるマップ",
       legend: "実線は「先行する美学・背景 → 後続する美学・文脈」を示します",
-      relatedLegend: "点線は選択した美学に結びつく美学・文脈を示します",
+      relatedLegend: "矢印のない実線は、美学に結びつく同時期・関連する文脈を示します",
       inspectorLabel: "選択した美学の詳細",
       accessibleList: "アクセシブルな美学一覧",
       knowledgeList: "美学一覧",

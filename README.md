@@ -19,6 +19,11 @@ The 2026-07-31 snapshot contains 55 source pages:
 
 The normalized source snapshot is committed under `source/cosense/`. External
 images and videos remain links; no external media binaries are stored here.
+At render time, a paragraph consisting only of supported YouTube video links
+is presented through lazy, privacy-enhanced `youtube-nocookie.com`
+embeds with captions linking to the original URLs. Inline citation links and
+unsupported YouTube pages remain ordinary links, and source Markdown stays
+free of raw iframes.
 See [`docs/import-report.md`](docs/import-report.md) and
 [`docs/import-policy.md`](docs/import-policy.md).
 

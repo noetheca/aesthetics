@@ -1,4 +1,6 @@
 import { defineConfig } from "astro/config";
+import { unified } from "@astrojs/markdown-remark";
+import youtubeEmbeds from "./src/markdown/youtube-embeds.mjs";
 
 export default defineConfig({
   site: "https://noetheca.github.io",
@@ -9,5 +11,6 @@ export default defineConfig({
   },
   markdown: {
     syntaxHighlight: false,
+    processor: unified({ remarkPlugins: [youtubeEmbeds] }),
   },
 });
