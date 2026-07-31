@@ -7,6 +7,9 @@ import {
   type KnowledgeLanguageOption,
 } from "@noetheca/knowledge-engine";
 import { render, type CollectionEntry } from "astro:content";
+import relationAudit from "../../relations/cosense-link-audit.json";
+import curatedRelations from "../../relations/context-relations.json";
+import { buildAestheticsGraphRelations } from "../lib/aesthetics-relations";
 import { loadConceptEntries } from "../lib/concept-entries";
 import { siteLanguages } from "../lib/languages";
 import { conceptRoute, withBase } from "../lib/routes";
@@ -16,13 +19,13 @@ interface Props {
   entry: CollectionEntry<"concepts">;
   concept: Concept;
   relationTitles: Record<string, string>;
+  predecessorIds: string[];
+  successorIds: string[];
   relatedIds: string[];
   languages: KnowledgeLanguageOption[];
 }
 
 export async function getStaticPaths() {
-  const relationPairKey = (left: string, right: string): string =>
-    [left, right].sort().join("\u0000");
   const records = await loadConceptEntries();
   const translations = new Map(
     records.map(({ entry, concept }) => [
@@ -31,45 +34,44 @@ export async function getStaticPaths() {
     ]),
   );
   const conceptIds = new Set(records.map(({ concept }) => concept.metadata.id));
-  const prerequisitePairs = new Set<string>();
-  for (const { concept } of records) {
-    for (const prerequisiteId of concept.metadata.prerequisites) {
-      prerequisitePairs.add(
-        relationPairKey(concept.metadata.id, prerequisiteId),
-      );
-    }
-  }
-  const relatedByConcept = new Map<string, Set<string>>(
-    [...conceptIds].map((conceptId) => [conceptId, new Set<string>()]),
+  const { contextualRelations, relatedById } = buildAestheticsGraphRelations(
+    conceptIds,
+    relationAudit,
+    curatedRelations,
   );
-  for (const { concept } of records) {
-    const conceptId = concept.metadata.id;
-    for (const relatedId of concept.metadata.related) {
-      if (
-        relatedId === conceptId ||
-        !conceptIds.has(relatedId) ||
-        prerequisitePairs.has(relationPairKey(conceptId, relatedId))
-      ) {
-        continue;
-      }
-      relatedByConcept.get(conceptId)?.add(relatedId);
-      relatedByConcept.get(relatedId)?.add(conceptId);
-    }
+  const predecessorById = new Map<string, string[]>(
+    [...conceptIds].map((id) => [id, []]),
+  );
+  const successorById = new Map<string, string[]>(
+    [...conceptIds].map((id) => [id, []]),
+  );
+  for (const { source, target } of contextualRelations) {
+    predecessorById.get(target)?.push(source);
+    successorById.get(source)?.push(target);
   }
 
   return records.map(({ entry, concept }) => {
     const conceptId = concept.metadata.id;
-    const relatedIds = [...(relatedByConcept.get(conceptId) ?? [])].sort(
+    const byLocalizedTitle = (left: string, right: string): number => {
+      const leftTitle =
+        translations.get(`${left}:${entry.data.locale}`)?.data.title ?? left;
+      const rightTitle =
+        translations.get(`${right}:${entry.data.locale}`)?.data.title ?? right;
+      return leftTitle.localeCompare(rightTitle, entry.data.locale);
+    };
+    const predecessorIds = [...(predecessorById.get(conceptId) ?? [])].sort(
+      byLocalizedTitle,
+    );
+    const successorIds = [...(successorById.get(conceptId) ?? [])].sort(
+      byLocalizedTitle,
+    );
+    const relatedIds = [...(relatedById.get(conceptId) ?? [])].sort(
       (left, right) => {
-        const leftTitle =
-          translations.get(`${left}:${entry.data.locale}`)?.data.title ?? left;
-        const rightTitle =
-          translations.get(`${right}:${entry.data.locale}`)?.data.title ?? right;
-        return leftTitle.localeCompare(rightTitle, entry.data.locale);
+        return byLocalizedTitle(left, right);
       },
     );
     const relationTitles = Object.fromEntries(
-      [...concept.metadata.prerequisites, ...relatedIds]
+      [...predecessorIds, ...successorIds, ...relatedIds]
         .map((id) => [
           id,
           translations.get(`${id}:${entry.data.locale}`)?.data.title,
@@ -86,12 +88,28 @@ export async function getStaticPaths() {
       params: {
         slug: conceptRoute(entry.data.locale, conceptId),
       },
-      props: { entry, concept, relationTitles, relatedIds, languages },
+      props: {
+        entry,
+        concept,
+        relationTitles,
+        predecessorIds,
+        successorIds,
+        relatedIds,
+        languages,
+      },
     };
   });
 }
 
-const { entry, concept, relationTitles, relatedIds, languages } = Astro.props;
+const {
+  entry,
+  concept,
+  relationTitles,
+  predecessorIds,
+  successorIds,
+  relatedIds,
+  languages,
+} = Astro.props;
 const { Content } = await render(entry);
 const locale = entry.data.locale;
 const ui = getUiStrings(locale).article;
@@ -128,13 +146,15 @@ const editUrl = sourcePath
     </div>
 
     <ConceptRelations
-      prerequisites={concept.metadata.prerequisites.map(relation)}
+      prerequisites={predecessorIds.map(relation)}
+      successors={successorIds.map(relation)}
       related={relatedIds.map(relation)}
       mode="contextual"
       ariaLabel="美学の関係と文脈"
       labels={{
-        prerequisites: "先行する美学・背景",
-        related: "同時期・関連する美学・文脈",
+        prerequisites: "源流・影響元",
+        successors: "継承・派生した美学",
+        related: "関連する美学・文脈",
         empty: ui.noRelations,
       }}
     />

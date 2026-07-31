@@ -23,6 +23,10 @@ from API availability.
 Relationship candidates are generated at
 `relations/cosense-link-audit.json`. A plain wiki link defaults to
 `associated-with`, `unreviewed`, and `unassessed`; it is not copied to a
-concept's public `related` list. See
+concept's stored `related` list. Render-time related lines remain
+selection-only and do not affect graph physics. A separately reviewed overlay
+at `relations/context-relations.json` records provisional directions only when
+the imported Markdown describes an influence, reference, lineage, or
+development. See
 [`relationship-model.md`](relationship-model.md) for the evidence and review
 policy.

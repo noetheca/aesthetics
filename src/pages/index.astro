@@ -2,7 +2,10 @@
 import { createKnowledgeGraphModel } from "@noetheca/knowledge-engine";
 import KnowledgeGraph from "@noetheca/knowledge-engine/components/KnowledgeGraph.astro";
 import KnowledgeLayout from "@noetheca/knowledge-engine/components/KnowledgeLayout.astro";
+import relationAudit from "../../relations/cosense-link-audit.json";
+import curatedRelations from "../../relations/context-relations.json";
 import { extractAestheticsContext } from "../lib/aesthetics-context";
+import { buildAestheticsGraphRelations } from "../lib/aesthetics-relations";
 import { loadConceptEntries } from "../lib/concept-entries";
 import { siteLanguages } from "../lib/languages";
 import { conceptRoute, withBase } from "../lib/routes";
@@ -31,6 +34,11 @@ for (const { concept, translation } of records) {
   }
   contextFacts[id] = [{ label: "時期", value: context.periodRaw }];
 }
+const { contextualRelations, relatedById } = buildAestheticsGraphRelations(
+  records.map(({ concept }) => concept.metadata.id),
+  relationAudit,
+  curatedRelations,
+);
 const graph = createKnowledgeGraphModel(
   records.map(({ entry, concept }) => ({
     id: concept.metadata.id,
@@ -39,8 +47,14 @@ const graph = createKnowledgeGraphModel(
     status: entry.data.status,
     href: withBase(conceptRoute(entry.data.locale, concept.metadata.id)),
     prerequisites: concept.metadata.prerequisites,
-    related: concept.metadata.related,
+    related: [
+      ...new Set([
+        ...concept.metadata.related,
+        ...(relatedById.get(concept.metadata.id) ?? []),
+      ]),
+    ],
   })),
+  { contextualRelations },
 );
 ---
 
@@ -64,8 +78,8 @@ const graph = createKnowledgeGraphModel(
     initialView="responsive"
     labels={{
       viewportLabel: "美学の関係と文脈をたどるマップ",
-      legend: "実線は「先行する美学・背景 → 後続する美学・文脈」を示します",
-      relatedLegend: "矢印のない実線は、美学に結びつく同時期・関連する文脈を示します",
+      legend: "矢印は、本文から推定した「源流・影響元 → 継承・派生先」を示します",
+      relatedLegend: "一点鎖線は、選択した美学に関連する文脈を示します",
       inspectorLabel: "選択した美学の詳細",
       accessibleList: "アクセシブルな美学一覧",
       knowledgeList: "美学一覧",
@@ -73,14 +87,14 @@ const graph = createKnowledgeGraphModel(
       articleEyebrow: "美学の記事",
       navigationLabel: "美学の関係と文脈",
       selectedKnowledge: "選択した美学",
-      prerequisites: "先行する美学・背景",
+      prerequisites: "源流・影響元",
       noPrerequisites: "登録されていません",
-      dependents: "後続する美学・文脈",
+      dependents: "継承・派生した美学",
       noDependents: "登録されていません",
-      related: "同時期・関連する美学・文脈",
+      related: "関連する美学・文脈",
       learn: "この美学を読む",
-      previous: "先行する美学・背景",
-      next: "同時期・関連する美学・文脈",
+      previous: "源流・影響元",
+      next: "継承・派生した美学",
       noKnowledge: "該当する美学はありません",
     }}
   />

@@ -4,7 +4,7 @@
 
 美学ウィキの内部リンクを、学習上の「前提知識」や検証済みの歴史的因果として扱わないための暫定モデルです。美学ドメインでは、ある概念を先に学ぶ必要があるという関係よりも、表現・媒体・時代背景の連続や近接をたどれることを優先します。
 
-この文書と `relations/cosense-link-audit.json` はレビュー用の提案です。共通エンジンの schema v1 に型付き関係が追加されるまでは、候補を `concept.yaml` の `prerequisites` や `related` へ自動昇格しません。
+`relations/cosense-link-audit.json` は再生成可能なリンク監査、`relations/context-relations.json` は本文の関係表現を人間が確認して向きを付けた暫定レイヤーです。歴史関係を `concept.yaml` の `prerequisites` へ流用せず、共通エンジンの有向 `contextualRelations` として描画します。
 
 ## リンクから推論しないこと
 
@@ -34,7 +34,7 @@
 
 - 永続的な両端の concept ID
 - `relationType` と `direction`
-- `reviewStatus`: `unreviewed` または `needs-evidence`。将来 `accepted` / `rejected` を追加する
+- `reviewStatus`: 監査候補では `unreviewed` / `needs-evidence`、表示用レイヤーでは `provisional`。将来 `accepted` / `rejected` を追加する
 - `confidence`: `unassessed` / `low` / `medium` / `high`
 - `basis`: 単純な内部リンクか、関係を明記した本文か
 - source page ID、URL、更新時刻、本文SHA-256、行番号、原文を含む `evidence`
@@ -45,19 +45,29 @@
 
 2026-07-31 snapshotにある151件のリンク参照のうち、74件はインポート済みconcept同士として一意に解決できました。残る77件は未作成ページ、archive対象、またはconceptではないページを含みます。
 
-74件はすべて公開グラフへ昇格せず候補台帳へ移しました。そのうち、本文が関係を明記する次の2件だけを `influenced-by` 候補として一次分類しています。
+74件はまず候補台帳へ移しました。そのうち、本文が関係を明記する次の2件を `influenced-by` 候補として一次分類しています。
 
 - Technozen → Frutiger Aero: 本文に「影響を受けた」とある
 - Webcore → Old Web: 本文に「明確な参照元」とある
 
-いずれも `needs-evidence` / `low` であり、史実として承認したものではありません。その他72件は `associated-with` / `unreviewed` / `unassessed` です。
+さらにMarkdown本文を照合し、表示用の有向関係として次の5件を `context-relations.json` に整理しました。
+
+- Frutiger Aero → Technozen（影響）
+- Old Web → Webcore（参照元）
+- PV（ニコニコ動画） → 2DMV（直系）
+- フラットデザイン → 未定：主線なし（「発展？」という低確信度の仮説）
+- Wacky Pomo → Kidcore（文脈の継承）
+
+これらはすべて `provisional` であり、史実として承認したものではありません。矢印は本文に記された方向の可視化で、レコードごとに監査候補ID、根拠、確信度を保持します。
+
+残る一般リンクは無向の `associated-with` として扱います。グラフではノード選択時だけ一点鎖線で表示し、初期配置・ばね・反発力には参加させません。有向関係だけが矢印と物理接続を持ちます。
 
 ## 移行手順
 
 1. 保存済みsnapshotから候補台帳を再生成し、リンクの消失や解決先変更を差分で確認する。
 2. 編集者が原文行と外部出典を確認し、型・向き・レビュー状態・確信度を更新する。
-3. 型付き関係を保持できる共通エンジンschemaを別PRで設計する。schema v1の `prerequisites` に歴史関係を流用しない。
-4. `accepted` になった候補だけを公開manifestへ昇格する。
-5. UIでは「前提／次に学ぶ」を使わず、「文脈マップ」「影響元」「継承先」「同時期の美学」「周辺の美学」などドメイン固有の語彙で表示する。
+3. 本文が方向を明記する候補を `context-relations.json` へ追加し、向き・根拠・確信度をレビューする。
+4. 外部出典を確認できた候補を将来 `accepted` へ更新する。
+5. UIでは「前提／次に学ぶ」を使わず、「文脈マップ」「源流・影響元」「継承・派生した美学」「関連する美学・文脈」などドメイン固有の語彙で表示する。
 
 元snapshot、変換Markdown、候補台帳に含まれる出典行は、既存の帰属表示とCC BY-SA 4.0の範囲を引き継ぎます。外部リンク先の文章・画像・動画は複製も再ライセンスもしません。
