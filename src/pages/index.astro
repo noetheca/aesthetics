@@ -1,155 +1,65 @@
 ---
+import { createKnowledgeGraphModel } from "@noetheca/knowledge-engine";
+import KnowledgeGraph from "@noetheca/knowledge-engine/components/KnowledgeGraph.astro";
 import KnowledgeLayout from "@noetheca/knowledge-engine/components/KnowledgeLayout.astro";
 import { loadConceptEntries } from "../lib/concept-entries";
+import { siteLanguages } from "../lib/languages";
 import { conceptRoute, withBase } from "../lib/routes";
 import "../styles/aesthetics.css";
 
-const records = (await loadConceptEntries()).sort((left, right) =>
-  left.entry.data.title.localeCompare(right.entry.data.title, "ja"),
+const locale = "ja";
+const records = (await loadConceptEntries())
+  .filter(({ entry }) => entry.data.locale === locale)
+  .sort((left, right) =>
+    left.entry.data.title.localeCompare(right.entry.data.title, locale),
+  );
+const graph = createKnowledgeGraphModel(
+  records.map(({ entry, concept }) => ({
+    id: concept.metadata.id,
+    title: entry.data.title,
+    summary: entry.data.summary,
+    status: entry.data.status,
+    href: withBase(conceptRoute(entry.data.locale, concept.metadata.id)),
+    prerequisites: concept.metadata.prerequisites,
+    related: concept.metadata.related,
+  })),
 );
-const reviewCount = records.filter(
-  ({ entry }) => entry.data.status === "review",
-).length;
-const draftCount = records.filter(
-  ({ entry }) => entry.data.status === "draft",
-).length;
 ---
 
 <KnowledgeLayout
   title="美学"
-  summary="Internet aestheticsと日本語圏の美学ミームを整理するnoethecaの知識領域です。"
-  locale="ja"
+  summary="Internet aestheticsと日本語圏の美学ミームを、関係と文脈からたどるnoethecaの知識領域です。"
+  locale={locale}
+  domain="aesthetics"
+  languages={siteLanguages}
+  immersive
 >
-  <article>
-    <p class="eyebrow">Aesthetics / imported review</p>
-    <h1>美学ミームを、つながりから読む。</h1>
-    <p class="lede">
-      Internet aesthetics、日本語圏の「〜界隈」「〜系」、映像・音楽・デザインの
-      横断的な表現を整理する試作です。初期コンテンツは美学ウィキから許諾に基づいて
-      移植し、すべて人間のレビュー対象としています。
-    </p>
-
-    <dl class="summary">
-      <div>
-        <dt>Review</dt>
-        <dd>{reviewCount}</dd>
-      </div>
-      <div>
-        <dt>Draft / stub</dt>
-        <dd>{draftCount}</dd>
-      </div>
-      <div>
-        <dt>Source</dt>
-        <dd><a href="https://scrapbox.io/AestheticsWiki/">美学ウィキ</a></dd>
-      </div>
-    </dl>
-
-    <aside class="review-note">
-      <strong>インポートレビュー中</strong>
-      <p>
-        Scrapbox記法は機械変換されています。事実、出典、関連、表現、帰属を確認してから
-        <code>published</code>へ移行します。外部メディアは複製せずリンクのみ残しています。
-      </p>
-    </aside>
-
-    <section aria-labelledby="concept-list">
-      <h2 id="concept-list">項目一覧</h2>
-      <ul class="concept-list">
-        {
-          records.map(({ entry, concept }) => (
-            <li>
-              <a
-                href={withBase(
-                  conceptRoute(entry.data.locale, concept.metadata.id),
-                )}
-              >
-                <strong>{entry.data.title}</strong>
-                <span>{entry.data.summary}</span>
-              </a>
-              <small data-status={entry.data.status}>{entry.data.status}</small>
-            </li>
-          ))
-        }
-      </ul>
-    </section>
-  </article>
+  <KnowledgeGraph
+    graph={graph}
+    locale={locale}
+    title="美学 文脈マップ"
+    relationshipMode="contextual"
+    initialView="responsive"
+    labels={{
+      viewportLabel: "美学の関係と文脈をたどるマップ",
+      legend: "実線は「先行する美学・背景 → 後続する美学・文脈」を示します",
+      relatedLegend: "点線は選択した美学に結びつく美学・文脈を示します",
+      inspectorLabel: "選択した美学の詳細",
+      accessibleList: "アクセシブルな美学一覧",
+      knowledgeList: "美学一覧",
+      articleLabel: "美学の記事",
+      articleEyebrow: "美学の記事",
+      navigationLabel: "美学の関係と文脈",
+      selectedKnowledge: "選択した美学",
+      prerequisites: "先行する美学・背景",
+      noPrerequisites: "登録されていません",
+      dependents: "後続する美学・文脈",
+      noDependents: "登録されていません",
+      related: "同時期・関連する美学・文脈",
+      learn: "この美学を読む",
+      previous: "先行する美学・背景",
+      next: "同時期・関連する美学・文脈",
+      noKnowledge: "該当する美学はありません",
+    }}
+  />
 </KnowledgeLayout>
-
-<style>
-  .summary {
-    display: grid;
-    gap: 0.7rem;
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-    margin-block: 2rem;
-  }
-
-  .summary div {
-    background: color-mix(in srgb, var(--surface) 86%, transparent);
-    border: 1px solid var(--line);
-    border-radius: 0.9rem;
-    padding: 0.9rem 1rem;
-  }
-
-  .summary dt {
-    color: var(--muted);
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  .summary dd {
-    font-size: 1.4rem;
-    font-weight: 750;
-    margin: 0.15rem 0 0;
-  }
-
-  .review-note {
-    background: var(--accent-soft);
-    border-radius: 0.9rem;
-    padding: 1rem 1.1rem;
-  }
-
-  .review-note p {
-    margin-bottom: 0;
-  }
-
-  .concept-list {
-    display: grid;
-    gap: 0.75rem;
-    list-style: none;
-    padding: 0;
-  }
-
-  .concept-list li {
-    align-items: start;
-    background: color-mix(in srgb, var(--surface) 88%, transparent);
-    border: 1px solid var(--line);
-    border-radius: 0.8rem;
-    display: grid;
-    gap: 0.7rem;
-    grid-template-columns: minmax(0, 1fr) auto;
-    padding: 1rem;
-  }
-
-  .concept-list a {
-    display: grid;
-    gap: 0.2rem;
-    min-width: 0;
-    text-decoration: none;
-  }
-
-  .concept-list a span,
-  .concept-list small {
-    color: var(--muted);
-  }
-
-  .concept-list small {
-    border: 1px solid var(--line);
-    border-radius: 100vw;
-    padding: 0.15rem 0.55rem;
-  }
-
-  .concept-list small[data-status="draft"] {
-    border-style: dashed;
-  }
-</style>

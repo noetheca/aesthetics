@@ -1,5 +1,7 @@
 import {
+  createTranslationFileIndex,
   loadKnowledgeBase,
+  normalizeTranslationFilePath,
   type Concept,
   type ConceptTranslation,
 } from "@noetheca/knowledge-engine";
@@ -7,17 +9,12 @@ import {
   getCollection,
   type CollectionEntry,
 } from "astro:content";
-import { normalize, resolve } from "node:path";
+import { resolve } from "node:path";
 
 export interface ConceptEntry {
   entry: CollectionEntry<"concepts">;
   concept: Concept;
   translation: ConceptTranslation;
-}
-
-function sourceKey(filePath: string): string {
-  const absolutePath = normalize(resolve(filePath));
-  return process.platform === "win32" ? absolutePath.toLowerCase() : absolutePath;
 }
 
 export async function loadConceptEntries(): Promise<ConceptEntry[]> {
@@ -36,42 +33,40 @@ export async function loadConceptEntries(): Promise<ConceptEntry[]> {
     );
   }
 
-  const translations = new Map<
-    string,
-    { concept: Concept; translation: ConceptTranslation }
-  >();
-  for (const concept of knowledgeBase.concepts) {
-    for (const translation of concept.translations.values()) {
-      const key = sourceKey(translation.filePath);
-      if (translations.has(key)) {
-        throw new Error(`Duplicate translation source file: ${translation.filePath}`);
-      }
-      translations.set(key, { concept, translation });
-    }
-  }
-
-  const matched = new Set<string>();
+  const translationIndex = createTranslationFileIndex(knowledgeBase);
+  const matchedFiles = new Set<string>();
   const records = entries.map((entry) => {
     if (!entry.filePath) {
       throw new Error(`Content entry "${entry.id}" has no source file path.`);
     }
-    const key = sourceKey(entry.filePath);
-    const record = translations.get(key);
+
+    const fileKey = normalizeTranslationFilePath(entry.filePath);
+    const record = translationIndex.get(fileKey);
     if (!record) {
-      throw new Error(`No concept metadata found for "${entry.filePath}".`);
+      throw new Error(
+        `No concept metadata found for content file "${entry.filePath}".`,
+      );
     }
     if (record.translation.metadata.locale !== entry.data.locale) {
-      throw new Error(`Locale mismatch for "${entry.filePath}".`);
+      throw new Error(
+        `Locale mismatch for "${entry.filePath}": Astro loaded ` +
+          `"${entry.data.locale}", engine loaded ` +
+          `"${record.translation.metadata.locale}".`,
+      );
     }
-    matched.add(key);
+    matchedFiles.add(fileKey);
     return { entry, ...record };
   });
 
-  const unmatched = [...translations.keys()].filter((key) => !matched.has(key));
+  const unmatched = [...translationIndex.keys()].filter(
+    (fileKey) => !matchedFiles.has(fileKey),
+  );
   if (unmatched.length > 0) {
     throw new Error(
-      `Astro did not load ${unmatched.length} validated translation file(s).`,
+      `Astro did not load ${unmatched.length} validated translation file(s):\n` +
+        unmatched.join("\n"),
     );
   }
+
   return records;
 }
