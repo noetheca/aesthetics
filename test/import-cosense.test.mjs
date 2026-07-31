@@ -6,10 +6,22 @@ import {
   buildRelationAudit,
   buildConceptId,
   classifyPage,
+  compareUnicodeCodePoints,
   convertScrapboxLine,
   normalizeTitle,
   sourcePageUrl,
 } from "../scripts/import-cosense.mjs";
+
+test("compares strings by Unicode code point without locale-dependent collation", () => {
+  assert.deepEqual(
+    ["病みカワ", "😀", "渋谷系", "\uE000", "𠮷", "平成レトロ", "A"].sort(
+      compareUnicodeCodePoints,
+    ),
+    ["A", "平成レトロ", "渋谷系", "病みカワ", "\uE000", "😀", "𠮷"],
+  );
+  assert.equal(compareUnicodeCodePoints("same", "same"), 0);
+  assert.ok(compareUnicodeCodePoints("prefix", "prefix-a") < 0);
+});
 
 test("normalizes titles without using them as IDs", () => {
   assert.equal(normalizeTitle("Liminal_space"), "liminal space");
