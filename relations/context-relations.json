@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "directionConvention": "source-context -> later or inheriting target-context",
+  "policy": {
+    "publicStatus": "provisional",
+    "physics": "directed-relations-only",
+    "relatedDisplay": "selection-only",
+    "documentation": "docs/relationship-model.md"
+  },
+  "relations": [
+    {
+      "id": "context:frutiger-aero:technozen",
+      "sourceConceptId": "aesthetics/scrapbox/6977e691e21794c7cae4c3ba",
+      "targetConceptId": "aesthetics/scrapbox/6977ad0e5f88b7abe4a99125",
+      "relationType": "influences",
+      "reviewStatus": "provisional",
+      "confidence": "medium",
+      "rationale": "Technozen本文がFrutiger Aero系列からの影響を明記しているため、Frutiger AeroからTechnozenへの向きで表示する。",
+      "evidenceCandidateId": "cosense-link:6977ad0e5f88b7abe4a99125:6977e691e21794c7cae4c3ba"
+    },
+    {
+      "id": "context:old-web:webcore",
+      "sourceConceptId": "aesthetics/scrapbox/69998a0b58b8fa96506687d3",
+      "targetConceptId": "aesthetics/scrapbox/6977f104df1b80cff76f6bf6",
+      "relationType": "influences",
+      "reviewStatus": "provisional",
+      "confidence": "medium",
+      "rationale": "Webcore本文がOld Webを明確な参照元と記述しているため、Old WebからWebcoreへの向きで表示する。",
+      "evidenceCandidateId": "cosense-link:6977f104df1b80cff76f6bf6:69998a0b58b8fa96506687d3"
+    },
+    {
+      "id": "context:niconico-pv:2dmv",
+      "sourceConceptId": "aesthetics/scrapbox/69935a632cdb207010fd495a",
+      "targetConceptId": "aesthetics/scrapbox/697d4a856b55444c63ea55f8",
+      "relationType": "inherits-from",
+      "reviewStatus": "provisional",
+      "confidence": "medium",
+      "rationale": "2DMV本文が「PV（ニコニコ動画）の直系の様式」と明記しているため、PVから2DMVへの継承として表示する。",
+      "evidenceCandidateId": "cosense-link:697d4a856b55444c63ea55f8:69935a632cdb207010fd495a"
+    },
+    {
+      "id": "context:flat-design:no-outline",
+      "sourceConceptId": "aesthetics/scrapbox/697e692912e079d3e21f0433",
+      "targetConceptId": "aesthetics/scrapbox/697db41aac10ca0dda716f3a",
+      "relationType": "inherits-from",
+      "reviewStatus": "provisional",
+      "confidence": "low",
+      "rationale": "「フラットデザインの発展？」という本文上の仮説を向きの候補として表示する。疑問符付きであり、確定関係ではない。",
+      "evidenceCandidateId": "cosense-link:697db41aac10ca0dda716f3a:697e692912e079d3e21f0433"
+    },
+    {
+      "id": "context:wacky-pomo:kidcore",
+      "sourceConceptId": "aesthetics/scrapbox/6983649256f28b66cadc9cb1",
+      "targetConceptId": "aesthetics/scrapbox/69883a09c6f9c1f3a59cf3f2",
+      "relationType": "inherits-from",
+      "reviewStatus": "provisional",
+      "confidence": "medium",
+      "rationale": "Kidcore本文がWacky Pomoから商業色を抜いたものと説明しているため、Wacky PomoからKidcoreへの文脈継承として表示する。",
+      "evidenceCandidateId": "cosense-link:69883a09c6f9c1f3a59cf3f2:6983649256f28b66cadc9cb1"
+    }
+  ]
+}

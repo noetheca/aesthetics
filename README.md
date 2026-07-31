@@ -27,6 +27,19 @@ free of raw iframes.
 See [`docs/import-report.md`](docs/import-report.md) and
 [`docs/import-policy.md`](docs/import-policy.md).
 
+Internal wiki links are retained as auditable relationship candidates rather
+than treated as verified historical facts. The proposed aesthetics-specific
+taxonomy and migration plan are documented in
+[`docs/relationship-model.md`](docs/relationship-model.md), with the
+machine-readable audit at
+[`relations/cosense-link-audit.json`](relations/cosense-link-audit.json).
+Five source-text-supported directions are maintained as provisional context
+relations in
+[`relations/context-relations.json`](relations/context-relations.json).
+Directed context relations affect the graph layout and render as arrows;
+ordinary related links appear as non-physical dash-dot lines only while a
+connected concept is selected.
+
 ## Development
 
 Place this repository next to `knowledge-engine`, then run:

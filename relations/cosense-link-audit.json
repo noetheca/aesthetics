@@ -1,0 +1,3343 @@
+{
+  "schemaVersion": 1,
+  "taxonomyVersion": 1,
+  "generatedFrom": {
+    "snapshot": "source/cosense/AestheticsWiki.json",
+    "sourceProject": "AestheticsWiki",
+    "sourceProjectUrl": "https://scrapbox.io/AestheticsWiki/",
+    "fetchedAt": "2026-07-31T06:22:18.647Z",
+    "license": "CC-BY-SA-4.0",
+    "attribution": "AestheticsWiki contributors",
+    "modifications": "Resolved internal link targets and recorded review-only relation candidates with source-line evidence."
+  },
+  "policy": {
+    "defaultRelationType": "associated-with",
+    "defaultReviewStatus": "unreviewed",
+    "publicGraphPromotion": "human-review-required",
+    "documentation": "docs/relationship-model.md"
+  },
+  "counts": {
+    "sourceLinkReferences": 151,
+    "eligibleLinkReferences": 74,
+    "candidateRelations": 74,
+    "explicitWordingCandidates": 2,
+    "skippedLinks": 77
+  },
+  "candidates": [
+    {
+      "id": "cosense-link:6977ad0e5f88b7abe4a99125:6977e691e21794c7cae4c3ba",
+      "sourceConceptId": "aesthetics/scrapbox/6977ad0e5f88b7abe4a99125",
+      "targetConceptId": "aesthetics/scrapbox/6977e691e21794c7cae4c3ba",
+      "relationType": "influenced-by",
+      "direction": "directed",
+      "reviewStatus": "needs-evidence",
+      "confidence": "low",
+      "basis": "explicit-source-wording",
+      "rationale": "元ページ本文はFrutiger Aeroからの影響を明記しているが、独立した出典確認は未完了。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6977ad0e5f88b7abe4a99125",
+          "sourcePageTitle": "Technozen",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Technozen",
+          "sourceUpdated": 1770153797,
+          "sourceTextSha256": "1a1be0c53ff11ba8b346ff25cdeb822bee2ea06e78d5d3bd3758175d6a4e643f",
+          "lineNumber": 11,
+          "lineText": "日本のテクノロジー美学に影響を受けた[Frutiger Aero]系列の美学です。",
+          "linkTitle": "Frutiger Aero"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6977ad0e5f88b7abe4a99125:6977eb15ba17ef93917ab26a",
+      "sourceConceptId": "aesthetics/scrapbox/6977ad0e5f88b7abe4a99125",
+      "targetConceptId": "aesthetics/scrapbox/6977eb15ba17ef93917ab26a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6977ad0e5f88b7abe4a99125",
+          "sourcePageTitle": "Technozen",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Technozen",
+          "sourceUpdated": 1770153797,
+          "sourceTextSha256": "1a1be0c53ff11ba8b346ff25cdeb822bee2ea06e78d5d3bd3758175d6a4e643f",
+          "lineNumber": 8,
+          "lineText": "[万博core][未定：10年代Webcore][行政core]",
+          "linkTitle": "未定：10年代Webcore"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6977ad0e5f88b7abe4a99125:697a9ab34b9cfb77745c397a",
+      "sourceConceptId": "aesthetics/scrapbox/6977ad0e5f88b7abe4a99125",
+      "targetConceptId": "aesthetics/scrapbox/697a9ab34b9cfb77745c397a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6977ad0e5f88b7abe4a99125",
+          "sourcePageTitle": "Technozen",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Technozen",
+          "sourceUpdated": 1770153797,
+          "sourceTextSha256": "1a1be0c53ff11ba8b346ff25cdeb822bee2ea06e78d5d3bd3758175d6a4e643f",
+          "lineNumber": 8,
+          "lineText": "[万博core][未定：10年代Webcore][行政core]",
+          "linkTitle": "万博core"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6977e691e21794c7cae4c3ba:6977ad0e5f88b7abe4a99125",
+      "sourceConceptId": "aesthetics/scrapbox/6977e691e21794c7cae4c3ba",
+      "targetConceptId": "aesthetics/scrapbox/6977ad0e5f88b7abe4a99125",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6977e691e21794c7cae4c3ba",
+          "sourcePageTitle": "Frutiger Aero",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Frutiger%20Aero",
+          "sourceUpdated": 1771919973,
+          "sourceTextSha256": "81486e7e9b6760854812f61591d4671fdbf6cf49865b5aa865ff7c03c0be9ab1",
+          "lineNumber": 7,
+          "lineText": "[Technozen][Liquid Glass][Frutiger Metro]",
+          "linkTitle": "Technozen"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6977e691e21794c7cae4c3ba:6977e9820089c442f3720f24",
+      "sourceConceptId": "aesthetics/scrapbox/6977e691e21794c7cae4c3ba",
+      "targetConceptId": "aesthetics/scrapbox/6977e9820089c442f3720f24",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6977e691e21794c7cae4c3ba",
+          "sourcePageTitle": "Frutiger Aero",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Frutiger%20Aero",
+          "sourceUpdated": 1771919973,
+          "sourceTextSha256": "81486e7e9b6760854812f61591d4671fdbf6cf49865b5aa865ff7c03c0be9ab1",
+          "lineNumber": 7,
+          "lineText": "[Technozen][Liquid Glass][Frutiger Metro]",
+          "linkTitle": "Frutiger Metro"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6977e9820089c442f3720f24:6977eb15ba17ef93917ab26a",
+      "sourceConceptId": "aesthetics/scrapbox/6977e9820089c442f3720f24",
+      "targetConceptId": "aesthetics/scrapbox/6977eb15ba17ef93917ab26a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6977e9820089c442f3720f24",
+          "sourcePageTitle": "Frutiger Metro",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Frutiger%20Metro",
+          "sourceUpdated": 1770637301,
+          "sourceTextSha256": "1e512296cea440cebf769fef8c66068615bb9afa449d171b4d1f00deb201b5cb",
+          "lineNumber": 7,
+          "lineText": "[未定：10年代Webcore][フラットデザイン]",
+          "linkTitle": "未定：10年代Webcore"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6977e9820089c442f3720f24:697e692912e079d3e21f0433",
+      "sourceConceptId": "aesthetics/scrapbox/6977e9820089c442f3720f24",
+      "targetConceptId": "aesthetics/scrapbox/697e692912e079d3e21f0433",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6977e9820089c442f3720f24",
+          "sourcePageTitle": "Frutiger Metro",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Frutiger%20Metro",
+          "sourceUpdated": 1770637301,
+          "sourceTextSha256": "1e512296cea440cebf769fef8c66068615bb9afa449d171b4d1f00deb201b5cb",
+          "lineNumber": 7,
+          "lineText": "[未定：10年代Webcore][フラットデザイン]",
+          "linkTitle": "フラットデザイン"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6977eb15ba17ef93917ab26a:6977ec930a007c2358f78a50",
+      "sourceConceptId": "aesthetics/scrapbox/6977eb15ba17ef93917ab26a",
+      "targetConceptId": "aesthetics/scrapbox/6977ec930a007c2358f78a50",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6977eb15ba17ef93917ab26a",
+          "sourcePageTitle": "未定：10年代Webcore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E6%9C%AA%E5%AE%9A%EF%BC%9A10%E5%B9%B4%E4%BB%A3Webcore",
+          "sourceUpdated": 1770096779,
+          "sourceTextSha256": "5edeedad5aacf3f5c758746e98085849732954e1cdd37194f57bdc7ebfe26629",
+          "lineNumber": 6,
+          "lineText": "[未定：スキャン3Dモデル]",
+          "linkTitle": "未定：スキャン3Dモデル"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6977f104df1b80cff76f6bf6:6977eb15ba17ef93917ab26a",
+      "sourceConceptId": "aesthetics/scrapbox/6977f104df1b80cff76f6bf6",
+      "targetConceptId": "aesthetics/scrapbox/6977eb15ba17ef93917ab26a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6977f104df1b80cff76f6bf6",
+          "sourcePageTitle": "Webcore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Webcore",
+          "sourceUpdated": 1781501069,
+          "sourceTextSha256": "7b801a50bf476967cd5cd16b5bb4f4cb931833f7a57e6769b04b02b6aa2e9747",
+          "lineNumber": 7,
+          "lineText": "[ローポリ][未定：10年代Webcore][ジェネ系]",
+          "linkTitle": "未定：10年代Webcore"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6977f104df1b80cff76f6bf6:69817d59c73cb119f22c122a",
+      "sourceConceptId": "aesthetics/scrapbox/6977f104df1b80cff76f6bf6",
+      "targetConceptId": "aesthetics/scrapbox/69817d59c73cb119f22c122a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6977f104df1b80cff76f6bf6",
+          "sourcePageTitle": "Webcore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Webcore",
+          "sourceUpdated": 1781501069,
+          "sourceTextSha256": "7b801a50bf476967cd5cd16b5bb4f4cb931833f7a57e6769b04b02b6aa2e9747",
+          "lineNumber": 7,
+          "lineText": "[ローポリ][未定：10年代Webcore][ジェネ系]",
+          "linkTitle": "ローポリ"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6977f104df1b80cff76f6bf6:698d2d65a5de44b5882705f1",
+      "sourceConceptId": "aesthetics/scrapbox/6977f104df1b80cff76f6bf6",
+      "targetConceptId": "aesthetics/scrapbox/698d2d65a5de44b5882705f1",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6977f104df1b80cff76f6bf6",
+          "sourcePageTitle": "Webcore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Webcore",
+          "sourceUpdated": 1781501069,
+          "sourceTextSha256": "7b801a50bf476967cd5cd16b5bb4f4cb931833f7a57e6769b04b02b6aa2e9747",
+          "lineNumber": 7,
+          "lineText": "[ローポリ][未定：10年代Webcore][ジェネ系]",
+          "linkTitle": "ジェネ系"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6977f104df1b80cff76f6bf6:69998a0b58b8fa96506687d3",
+      "sourceConceptId": "aesthetics/scrapbox/6977f104df1b80cff76f6bf6",
+      "targetConceptId": "aesthetics/scrapbox/69998a0b58b8fa96506687d3",
+      "relationType": "influenced-by",
+      "direction": "directed",
+      "reviewStatus": "needs-evidence",
+      "confidence": "low",
+      "basis": "explicit-source-wording",
+      "rationale": "元ページ本文はOld Webを明確な参照元と述べるが、独立した出典確認は未完了。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6977f104df1b80cff76f6bf6",
+          "sourcePageTitle": "Webcore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Webcore",
+          "sourceUpdated": 1781501069,
+          "sourceTextSha256": "7b801a50bf476967cd5cd16b5bb4f4cb931833f7a57e6769b04b02b6aa2e9747",
+          "lineNumber": 12,
+          "lineText": "[Old Web]は明確な参照元のスタイルです。",
+          "linkTitle": "Old Web"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69780082ba17ef93917b0357:697d4230ed7aa0a0e2887ec0",
+      "sourceConceptId": "aesthetics/scrapbox/69780082ba17ef93917b0357",
+      "targetConceptId": "aesthetics/scrapbox/697d4230ed7aa0a0e2887ec0",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69780082ba17ef93917b0357",
+          "sourcePageTitle": "botanica",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/botanica",
+          "sourceUpdated": 1778689823,
+          "sourceTextSha256": "06b4011bb0d5a3f30f17bc2fa30dd868e0e7294a3e11d70f236f7b9fd09a95a9",
+          "lineNumber": 6,
+          "lineText": "[お散歩MV]",
+          "linkTitle": "お散歩MV"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697a9ab34b9cfb77745c397a:6981531db8976d79c936f4ef",
+      "sourceConceptId": "aesthetics/scrapbox/697a9ab34b9cfb77745c397a",
+      "targetConceptId": "aesthetics/scrapbox/6981531db8976d79c936f4ef",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697a9ab34b9cfb77745c397a",
+          "sourcePageTitle": "万博core",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E4%B8%87%E5%8D%9Acore",
+          "sourceUpdated": 1770164771,
+          "sourceTextSha256": "e474fc29392bcaff38be508e0e45dfe6b4ad6ed18c566cb90933d8748e13eb86",
+          "lineNumber": 6,
+          "lineText": "[Y2K]",
+          "linkTitle": "Y2K"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697d4230ed7aa0a0e2887ec0:69780082ba17ef93917b0357",
+      "sourceConceptId": "aesthetics/scrapbox/697d4230ed7aa0a0e2887ec0",
+      "targetConceptId": "aesthetics/scrapbox/69780082ba17ef93917b0357",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697d4230ed7aa0a0e2887ec0",
+          "sourcePageTitle": "お散歩MV",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%8A%E6%95%A3%E6%AD%A9MV",
+          "sourceUpdated": 1784230753,
+          "sourceTextSha256": "d756a3be01a711891f8a11a38f05e815a3f9f13a46910e3f87609cfee8384446",
+          "lineNumber": 14,
+          "lineText": "[botanica]の25年以降の表現となめらかに連続します。",
+          "linkTitle": "botanica"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697d42f4bacf9a035f7a1583:697d4230ed7aa0a0e2887ec0",
+      "sourceConceptId": "aesthetics/scrapbox/697d42f4bacf9a035f7a1583",
+      "targetConceptId": "aesthetics/scrapbox/697d4230ed7aa0a0e2887ec0",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697d42f4bacf9a035f7a1583",
+          "sourcePageTitle": "Liminal space",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+          "sourceUpdated": 1782721979,
+          "sourceTextSha256": "760a3439565e0f83d5bd49dee68c438e6380e2bd52925953fe2279cbb8313f2e",
+          "lineNumber": 8,
+          "lineText": "[お散歩MV][インターネット風景系概念]",
+          "linkTitle": "お散歩MV"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697d42f4bacf9a035f7a1583:697d4768e27ae63e1a6913d8",
+      "sourceConceptId": "aesthetics/scrapbox/697d42f4bacf9a035f7a1583",
+      "targetConceptId": "aesthetics/scrapbox/697d4768e27ae63e1a6913d8",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697d42f4bacf9a035f7a1583",
+          "sourcePageTitle": "Liminal space",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+          "sourceUpdated": 1782721979,
+          "sourceTextSha256": "760a3439565e0f83d5bd49dee68c438e6380e2bd52925953fe2279cbb8313f2e",
+          "lineNumber": 20,
+          "lineText": "『[The Backrooms https://youtu.be/H4dGpz6cnHo?si=SvVqzdeYYRANS9pu]』はLiminal spaceをモチーフに[Analog horror]と接続した具体的なコンテンツであり、この作品の派生としてLiminal spaceではしばしばホラー表現やVHSノイズなどの[モキュメンタリー]、[found footage]の要素を含みます。",
+          "linkTitle": "モキュメンタリー"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697d42f4bacf9a035f7a1583:69818c297d80a00ac75c1d5a",
+      "sourceConceptId": "aesthetics/scrapbox/697d42f4bacf9a035f7a1583",
+      "targetConceptId": "aesthetics/scrapbox/69818c297d80a00ac75c1d5a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697d42f4bacf9a035f7a1583",
+          "sourcePageTitle": "Liminal space",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+          "sourceUpdated": 1782721979,
+          "sourceTextSha256": "760a3439565e0f83d5bd49dee68c438e6380e2bd52925953fe2279cbb8313f2e",
+          "lineNumber": 7,
+          "lineText": "関連: [Dreamcore][Vaporwave]",
+          "linkTitle": "Dreamcore"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697d42f4bacf9a035f7a1583:69867e9eaeff9d1da3a9afe0",
+      "sourceConceptId": "aesthetics/scrapbox/697d42f4bacf9a035f7a1583",
+      "targetConceptId": "aesthetics/scrapbox/69867e9eaeff9d1da3a9afe0",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697d42f4bacf9a035f7a1583",
+          "sourcePageTitle": "Liminal space",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+          "sourceUpdated": 1782721979,
+          "sourceTextSha256": "760a3439565e0f83d5bd49dee68c438e6380e2bd52925953fe2279cbb8313f2e",
+          "lineNumber": 7,
+          "lineText": "関連: [Dreamcore][Vaporwave]",
+          "linkTitle": "Vaporwave"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697d42f4bacf9a035f7a1583:69c81457a3c48bf205fc9e81",
+      "sourceConceptId": "aesthetics/scrapbox/697d42f4bacf9a035f7a1583",
+      "targetConceptId": "aesthetics/scrapbox/69c81457a3c48bf205fc9e81",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697d42f4bacf9a035f7a1583",
+          "sourcePageTitle": "Liminal space",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+          "sourceUpdated": 1782721979,
+          "sourceTextSha256": "760a3439565e0f83d5bd49dee68c438e6380e2bd52925953fe2279cbb8313f2e",
+          "lineNumber": 8,
+          "lineText": "[お散歩MV][インターネット風景系概念]",
+          "linkTitle": "インターネット風景系概念"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697d4768e27ae63e1a6913d8:697d42f4bacf9a035f7a1583",
+      "sourceConceptId": "aesthetics/scrapbox/697d4768e27ae63e1a6913d8",
+      "targetConceptId": "aesthetics/scrapbox/697d42f4bacf9a035f7a1583",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697d4768e27ae63e1a6913d8",
+          "sourcePageTitle": "モキュメンタリー",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A2%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AA%E3%83%BC",
+          "sourceUpdated": 1770704154,
+          "sourceTextSha256": "266894f938bb62beb745a9d918a7be432e949dd1050d790319441396e910a194",
+          "lineNumber": 6,
+          "lineText": "[Liminal space][画面内映像][Analog horror]",
+          "linkTitle": "Liminal space"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697d4768e27ae63e1a6913d8:697d5d300df413981be5064d",
+      "sourceConceptId": "aesthetics/scrapbox/697d4768e27ae63e1a6913d8",
+      "targetConceptId": "aesthetics/scrapbox/697d5d300df413981be5064d",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697d4768e27ae63e1a6913d8",
+          "sourcePageTitle": "モキュメンタリー",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A2%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AA%E3%83%BC",
+          "sourceUpdated": 1770704154,
+          "sourceTextSha256": "266894f938bb62beb745a9d918a7be432e949dd1050d790319441396e910a194",
+          "lineNumber": 6,
+          "lineText": "[Liminal space][画面内映像][Analog horror]",
+          "linkTitle": "画面内映像"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697d4a856b55444c63ea55f8:69935a632cdb207010fd495a",
+      "sourceConceptId": "aesthetics/scrapbox/697d4a856b55444c63ea55f8",
+      "targetConceptId": "aesthetics/scrapbox/69935a632cdb207010fd495a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697d4a856b55444c63ea55f8",
+          "sourcePageTitle": "2DMV",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/2DMV",
+          "sourceUpdated": 1771596926,
+          "sourceTextSha256": "5d88b2d16b77d3740db273ebc75b9d3dca8ebb80150c6f11be7824fa7fd1d974",
+          "lineNumber": 10,
+          "lineText": "[PV（ニコニコ動画）]の直系の様式です。",
+          "linkTitle": "PV（ニコニコ動画）"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697d55bcee83fb1b7fa3e74c:6981531db8976d79c936f4ef",
+      "sourceConceptId": "aesthetics/scrapbox/697d55bcee83fb1b7fa3e74c",
+      "targetConceptId": "aesthetics/scrapbox/6981531db8976d79c936f4ef",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697d55bcee83fb1b7fa3e74c",
+          "sourcePageTitle": "Acid Graphics",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Acid%20Graphics",
+          "sourceUpdated": 1769823070,
+          "sourceTextSha256": "0a7cfbeef3c4cd589e1d5256d5e80c3efe8825f14b88c384a2279a50ae997809",
+          "lineNumber": 6,
+          "lineText": "[Y2K]",
+          "linkTitle": "Y2K"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697dae7e918a1f10474e53ef:697d4230ed7aa0a0e2887ec0",
+      "sourceConceptId": "aesthetics/scrapbox/697dae7e918a1f10474e53ef",
+      "targetConceptId": "aesthetics/scrapbox/697d4230ed7aa0a0e2887ec0",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697dae7e918a1f10474e53ef",
+          "sourcePageTitle": "未定：実写内白線画イラスト",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E6%9C%AA%E5%AE%9A%EF%BC%9A%E5%AE%9F%E5%86%99%E5%86%85%E7%99%BD%E7%B7%9A%E7%94%BB%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88",
+          "sourceUpdated": 1770166631,
+          "sourceTextSha256": "145e3434b68186d80701040cafc12d0cc9db7f8dc7d5e11f0b10e7b6cd76fb58",
+          "lineNumber": 6,
+          "lineText": "思想的関連:[お散歩MV]",
+          "linkTitle": "お散歩MV"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697db41aac10ca0dda716f3a:697e692912e079d3e21f0433",
+      "sourceConceptId": "aesthetics/scrapbox/697db41aac10ca0dda716f3a",
+      "targetConceptId": "aesthetics/scrapbox/697e692912e079d3e21f0433",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697db41aac10ca0dda716f3a",
+          "sourcePageTitle": "未定：主線なし",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E6%9C%AA%E5%AE%9A%EF%BC%9A%E4%B8%BB%E7%B7%9A%E3%81%AA%E3%81%97",
+          "sourceUpdated": 1769892121,
+          "sourceTextSha256": "8f2e7add73d5284fd7f032973c0a1a3f1d15a6d6ae768b328c8a8d1388e922a2",
+          "lineNumber": 10,
+          "lineText": "[フラットデザイン]の発展？",
+          "linkTitle": "フラットデザイン"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:697e692912e079d3e21f0433:697db41aac10ca0dda716f3a",
+      "sourceConceptId": "aesthetics/scrapbox/697e692912e079d3e21f0433",
+      "targetConceptId": "aesthetics/scrapbox/697db41aac10ca0dda716f3a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "697e692912e079d3e21f0433",
+          "sourcePageTitle": "フラットデザイン",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3",
+          "sourceUpdated": 1771266354,
+          "sourceTextSha256": "e43b153de0911cd09861e5f808df5b4448ae5a19d44efd6ccd6d1e0c27a5b12b",
+          "lineNumber": 6,
+          "lineText": "[未定：主線なし][corporate memphis]",
+          "linkTitle": "未定：主線なし"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6981531db8976d79c936f4ef:6977ad0e5f88b7abe4a99125",
+      "sourceConceptId": "aesthetics/scrapbox/6981531db8976d79c936f4ef",
+      "targetConceptId": "aesthetics/scrapbox/6977ad0e5f88b7abe4a99125",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6981531db8976d79c936f4ef",
+          "sourcePageTitle": "Y2K",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y2K",
+          "sourceUpdated": 1770597377,
+          "sourceTextSha256": "f31be4a25a4682600db6102a03cfd9bfbc2133a3f164c7c54ea9b2b5f87db2fa",
+          "lineNumber": 7,
+          "lineText": "包含：[Frutiger Aero][Frutiger Metro][万博core][Technozen]",
+          "linkTitle": "Technozen"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6981531db8976d79c936f4ef:6977e691e21794c7cae4c3ba",
+      "sourceConceptId": "aesthetics/scrapbox/6981531db8976d79c936f4ef",
+      "targetConceptId": "aesthetics/scrapbox/6977e691e21794c7cae4c3ba",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6981531db8976d79c936f4ef",
+          "sourcePageTitle": "Y2K",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y2K",
+          "sourceUpdated": 1770597377,
+          "sourceTextSha256": "f31be4a25a4682600db6102a03cfd9bfbc2133a3f164c7c54ea9b2b5f87db2fa",
+          "lineNumber": 7,
+          "lineText": "包含：[Frutiger Aero][Frutiger Metro][万博core][Technozen]",
+          "linkTitle": "Frutiger Aero"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6981531db8976d79c936f4ef:6977e9820089c442f3720f24",
+      "sourceConceptId": "aesthetics/scrapbox/6981531db8976d79c936f4ef",
+      "targetConceptId": "aesthetics/scrapbox/6977e9820089c442f3720f24",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6981531db8976d79c936f4ef",
+          "sourcePageTitle": "Y2K",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y2K",
+          "sourceUpdated": 1770597377,
+          "sourceTextSha256": "f31be4a25a4682600db6102a03cfd9bfbc2133a3f164c7c54ea9b2b5f87db2fa",
+          "lineNumber": 7,
+          "lineText": "包含：[Frutiger Aero][Frutiger Metro][万博core][Technozen]",
+          "linkTitle": "Frutiger Metro"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6981531db8976d79c936f4ef:697a9ab34b9cfb77745c397a",
+      "sourceConceptId": "aesthetics/scrapbox/6981531db8976d79c936f4ef",
+      "targetConceptId": "aesthetics/scrapbox/697a9ab34b9cfb77745c397a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6981531db8976d79c936f4ef",
+          "sourcePageTitle": "Y2K",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y2K",
+          "sourceUpdated": 1770597377,
+          "sourceTextSha256": "f31be4a25a4682600db6102a03cfd9bfbc2133a3f164c7c54ea9b2b5f87db2fa",
+          "lineNumber": 7,
+          "lineText": "包含：[Frutiger Aero][Frutiger Metro][万博core][Technozen]",
+          "linkTitle": "万博core"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6981531db8976d79c936f4ef:698158a8a0d5db30034920d3",
+      "sourceConceptId": "aesthetics/scrapbox/6981531db8976d79c936f4ef",
+      "targetConceptId": "aesthetics/scrapbox/698158a8a0d5db30034920d3",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6981531db8976d79c936f4ef",
+          "sourcePageTitle": "Y2K",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y2K",
+          "sourceUpdated": 1770597377,
+          "sourceTextSha256": "f31be4a25a4682600db6102a03cfd9bfbc2133a3f164c7c54ea9b2b5f87db2fa",
+          "lineNumber": 18,
+          "lineText": "iMacに代表されるスケルトンの質感や[スキューモフィズム]、未来的なシェイプグラフィクス等を特徴とします。",
+          "linkTitle": "スキューモフィズム"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6981531db8976d79c936f4ef:6981721f2288d35fd9d985d3",
+      "sourceConceptId": "aesthetics/scrapbox/6981531db8976d79c936f4ef",
+      "targetConceptId": "aesthetics/scrapbox/6981721f2288d35fd9d985d3",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6981531db8976d79c936f4ef",
+          "sourcePageTitle": "Y2K",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y2K",
+          "sourceUpdated": 1770597377,
+          "sourceTextSha256": "f31be4a25a4682600db6102a03cfd9bfbc2133a3f164c7c54ea9b2b5f87db2fa",
+          "lineNumber": 8,
+          "lineText": "シリーズ：[Y3K]",
+          "linkTitle": "Y3K"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:698158a8a0d5db30034920d3:697e692912e079d3e21f0433",
+      "sourceConceptId": "aesthetics/scrapbox/698158a8a0d5db30034920d3",
+      "targetConceptId": "aesthetics/scrapbox/697e692912e079d3e21f0433",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "698158a8a0d5db30034920d3",
+          "sourcePageTitle": "スキューモフィズム",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%B9%E3%82%AD%E3%83%A5%E3%83%BC%E3%83%A2%E3%83%95%E3%82%A3%E3%82%BA%E3%83%A0",
+          "sourceUpdated": 1770084536,
+          "sourceTextSha256": "f3192542b39eba2cb80cb8901bff7fb72466c71f74909391cadc12efb5c16dce",
+          "lineNumber": 6,
+          "lineText": "[フラットデザイン]",
+          "linkTitle": "フラットデザイン"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69815a56c5b4c2ccff49ff14:6977e691e21794c7cae4c3ba",
+      "sourceConceptId": "aesthetics/scrapbox/69815a56c5b4c2ccff49ff14",
+      "targetConceptId": "aesthetics/scrapbox/6977e691e21794c7cae4c3ba",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69815a56c5b4c2ccff49ff14",
+          "sourcePageTitle": "美学ミーム",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+          "sourceUpdated": 1771131587,
+          "sourceTextSha256": "2044b75b5d986cd885ca0d6f492e770a8de14e52be8f98acd5a1863fd68c556a",
+          "lineNumber": 26,
+          "lineText": "この頃に[Y2K]及び[McBling]や[Frutiger Aero]が発見、命名されます。",
+          "linkTitle": "Frutiger Aero"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69815a56c5b4c2ccff49ff14:697d42f4bacf9a035f7a1583",
+      "sourceConceptId": "aesthetics/scrapbox/69815a56c5b4c2ccff49ff14",
+      "targetConceptId": "aesthetics/scrapbox/697d42f4bacf9a035f7a1583",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69815a56c5b4c2ccff49ff14",
+          "sourcePageTitle": "美学ミーム",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+          "sourceUpdated": 1771131587,
+          "sourceTextSha256": "2044b75b5d986cd885ca0d6f492e770a8de14e52be8f98acd5a1863fd68c556a",
+          "lineNumber": 37,
+          "lineText": "特に[Liminal space]はSCP財団等で既に土壌がある状態だったためにクリーピーパスタである『[* The Backrooms]』とともに著名となりました。",
+          "linkTitle": "Liminal space"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69815a56c5b4c2ccff49ff14:6981531db8976d79c936f4ef",
+      "sourceConceptId": "aesthetics/scrapbox/69815a56c5b4c2ccff49ff14",
+      "targetConceptId": "aesthetics/scrapbox/6981531db8976d79c936f4ef",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69815a56c5b4c2ccff49ff14",
+          "sourcePageTitle": "美学ミーム",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+          "sourceUpdated": 1771131587,
+          "sourceTextSha256": "2044b75b5d986cd885ca0d6f492e770a8de14e52be8f98acd5a1863fd68c556a",
+          "lineNumber": 26,
+          "lineText": "この頃に[Y2K]及び[McBling]や[Frutiger Aero]が発見、命名されます。",
+          "linkTitle": "Y2K"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69815a56c5b4c2ccff49ff14:69816ed225199ed41e901249",
+      "sourceConceptId": "aesthetics/scrapbox/69815a56c5b4c2ccff49ff14",
+      "targetConceptId": "aesthetics/scrapbox/69816ed225199ed41e901249",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69815a56c5b4c2ccff49ff14",
+          "sourcePageTitle": "美学ミーム",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+          "sourceUpdated": 1771131587,
+          "sourceTextSha256": "2044b75b5d986cd885ca0d6f492e770a8de14e52be8f98acd5a1863fd68c556a",
+          "lineNumber": 39,
+          "lineText": "また、美学ミームとは独立し、K-popから広まった[Y2K]ブームや、あのちゃんブームによる2022年以降の[天使界隈]など、音楽シーン周辺での同様のムーブメントも起こっています。",
+          "linkTitle": "天使界隈"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69815a56c5b4c2ccff49ff14:69867e9eaeff9d1da3a9afe0",
+      "sourceConceptId": "aesthetics/scrapbox/69815a56c5b4c2ccff49ff14",
+      "targetConceptId": "aesthetics/scrapbox/69867e9eaeff9d1da3a9afe0",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69815a56c5b4c2ccff49ff14",
+          "sourcePageTitle": "美学ミーム",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+          "sourceUpdated": 1771131587,
+          "sourceTextSha256": "2044b75b5d986cd885ca0d6f492e770a8de14e52be8f98acd5a1863fd68c556a",
+          "lineNumber": 21,
+          "lineText": "この頃登場した[Vaporwave]は2015年には日本語圏も含め広く知られたインターネット美学となり、「美学ミーム」について言及する際にはVaporwaveがしばしば扱われます（例えばAesthetics Wikiの背景は本美学のモチーフです）。",
+          "linkTitle": "Vaporwave"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69815a56c5b4c2ccff49ff14:6986901046ce7246cd07ba4a",
+      "sourceConceptId": "aesthetics/scrapbox/69815a56c5b4c2ccff49ff14",
+      "targetConceptId": "aesthetics/scrapbox/6986901046ce7246cd07ba4a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69815a56c5b4c2ccff49ff14",
+          "sourcePageTitle": "美学ミーム",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+          "sourceUpdated": 1771131587,
+          "sourceTextSha256": "2044b75b5d986cd885ca0d6f492e770a8de14e52be8f98acd5a1863fd68c556a",
+          "lineNumber": 13,
+          "lineText": "複数作品を連続的に指す語として、「[Cyberpunk]」や「[Hardcore]」といったマイクロジャンルが登場し、「-punk」や「-core」といった今日のインターネット美学の接尾辞の基礎となりました。",
+          "linkTitle": "Cyberpunk"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69816ed225199ed41e901249:6977f104df1b80cff76f6bf6",
+      "sourceConceptId": "aesthetics/scrapbox/69816ed225199ed41e901249",
+      "targetConceptId": "aesthetics/scrapbox/6977f104df1b80cff76f6bf6",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69816ed225199ed41e901249",
+          "sourcePageTitle": "天使界隈",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E5%A4%A9%E4%BD%BF%E7%95%8C%E9%9A%88",
+          "sourceUpdated": 1770092572,
+          "sourceTextSha256": "49d6928908877ac7e63b2d3542620c14e1d33ec0b60641cadeeff9c821342a39",
+          "lineNumber": 9,
+          "lineText": "パステルカラーや[webcore]をモチーフとしたゲームUIなどのグラフィクス、サイバー感を基調としたガジェット等によって構成される表現です。",
+          "linkTitle": "webcore"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6981721f2288d35fd9d985d3:69816ed225199ed41e901249",
+      "sourceConceptId": "aesthetics/scrapbox/6981721f2288d35fd9d985d3",
+      "targetConceptId": "aesthetics/scrapbox/69816ed225199ed41e901249",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6981721f2288d35fd9d985d3",
+          "sourcePageTitle": "Y3K",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y3K",
+          "sourceUpdated": 1770632387,
+          "sourceTextSha256": "603754ee7e17823b4872bd86fc6e419f78c587d157798aa137537203033f6870",
+          "lineNumber": 7,
+          "lineText": "[天使界隈]",
+          "linkTitle": "天使界隈"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6981721f2288d35fd9d985d3:69884173fec62c0b1842cd15",
+      "sourceConceptId": "aesthetics/scrapbox/6981721f2288d35fd9d985d3",
+      "targetConceptId": "aesthetics/scrapbox/69884173fec62c0b1842cd15",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6981721f2288d35fd9d985d3",
+          "sourcePageTitle": "Y3K",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y3K",
+          "sourceUpdated": 1770632387,
+          "sourceTextSha256": "603754ee7e17823b4872bd86fc6e419f78c587d157798aa137537203033f6870",
+          "lineNumber": 16,
+          "lineText": "また、K-popファンを中心とするコミュニティでは「サイバー系」などのカテゴリで[地雷系]、[天使界隈]に隣接したジャンルが成立し、Y3Kの国内ファッションとして著名です。「[HIDOLATRAL THEODOL https://hidolatral-theodol.com]」や「[anonenone https://www.anonenone.net/]」の一部などのブランドがあります。また韓国から輸入するセレクトショップ（例えば[.KOM https://www.instagram.com/dot_kom_official/]）やSHEIN等のオンラインサイトが主だった購入場所となっています。",
+          "linkTitle": "地雷系"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69817d59c73cb119f22c122a:6977e691e21794c7cae4c3ba",
+      "sourceConceptId": "aesthetics/scrapbox/69817d59c73cb119f22c122a",
+      "targetConceptId": "aesthetics/scrapbox/6977e691e21794c7cae4c3ba",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69817d59c73cb119f22c122a",
+          "sourcePageTitle": "ローポリ",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%AD%E3%83%BC%E3%83%9D%E3%83%AA",
+          "sourceUpdated": 1771921236,
+          "sourceTextSha256": "13d99fdc17b306cd252dc429ab8e67d6756aabafce3cbac920a0a69c0de3e5c5",
+          "lineNumber": 12,
+          "lineText": "DS、WiiやPSX等の2005年前後のゲーム（『どうぶつの森』『Mii』など）に影響を受けた、アンチエイリアスのかかった低解像度なテクスチャの質感が見られ、またこれらの技術的影響から[Frutiger Aero]のモチーフや楽曲と混合される場合があります。",
+          "linkTitle": "Frutiger Aero"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69818c297d80a00ac75c1d5a:6977f104df1b80cff76f6bf6",
+      "sourceConceptId": "aesthetics/scrapbox/69818c297d80a00ac75c1d5a",
+      "targetConceptId": "aesthetics/scrapbox/6977f104df1b80cff76f6bf6",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69818c297d80a00ac75c1d5a",
+          "sourcePageTitle": "Dreamcore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Dreamcore",
+          "sourceUpdated": 1776237649,
+          "sourceTextSha256": "7208384e21649f23890c9a1a040e3894f11e80e72ac5d5e46dd44f8c4de0bad0",
+          "lineNumber": 18,
+          "lineText": "MVやゲームの[Webcore]を主要とするコンテンツにおいてDreamcoreの手法が取られる場合があります。",
+          "linkTitle": "Webcore"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69818c297d80a00ac75c1d5a:697d42f4bacf9a035f7a1583",
+      "sourceConceptId": "aesthetics/scrapbox/69818c297d80a00ac75c1d5a",
+      "targetConceptId": "aesthetics/scrapbox/697d42f4bacf9a035f7a1583",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69818c297d80a00ac75c1d5a",
+          "sourcePageTitle": "Dreamcore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Dreamcore",
+          "sourceUpdated": 1776237649,
+          "sourceTextSha256": "7208384e21649f23890c9a1a040e3894f11e80e72ac5d5e46dd44f8c4de0bad0",
+          "lineNumber": 8,
+          "lineText": "関連：[Liminal space][病みカワ][Wacky Pomo]",
+          "linkTitle": "Liminal space"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69818c297d80a00ac75c1d5a:6983649256f28b66cadc9cb1",
+      "sourceConceptId": "aesthetics/scrapbox/69818c297d80a00ac75c1d5a",
+      "targetConceptId": "aesthetics/scrapbox/6983649256f28b66cadc9cb1",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69818c297d80a00ac75c1d5a",
+          "sourcePageTitle": "Dreamcore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Dreamcore",
+          "sourceUpdated": 1776237649,
+          "sourceTextSha256": "7208384e21649f23890c9a1a040e3894f11e80e72ac5d5e46dd44f8c4de0bad0",
+          "lineNumber": 8,
+          "lineText": "関連：[Liminal space][病みカワ][Wacky Pomo]",
+          "linkTitle": "Wacky Pomo"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69818c297d80a00ac75c1d5a:69885bd53251a62250c7b15d",
+      "sourceConceptId": "aesthetics/scrapbox/69818c297d80a00ac75c1d5a",
+      "targetConceptId": "aesthetics/scrapbox/69885bd53251a62250c7b15d",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69818c297d80a00ac75c1d5a",
+          "sourcePageTitle": "Dreamcore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Dreamcore",
+          "sourceUpdated": 1776237649,
+          "sourceTextSha256": "7208384e21649f23890c9a1a040e3894f11e80e72ac5d5e46dd44f8c4de0bad0",
+          "lineNumber": 13,
+          "lineText": "Tiktok発であり[Animation meme]の手法も取られることがあります。",
+          "linkTitle": "Animation meme"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69818c297d80a00ac75c1d5a:6991355ea2130bd2234e38e5",
+      "sourceConceptId": "aesthetics/scrapbox/69818c297d80a00ac75c1d5a",
+      "targetConceptId": "aesthetics/scrapbox/6991355ea2130bd2234e38e5",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69818c297d80a00ac75c1d5a",
+          "sourcePageTitle": "Dreamcore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Dreamcore",
+          "sourceUpdated": 1776237649,
+          "sourceTextSha256": "7208384e21649f23890c9a1a040e3894f11e80e72ac5d5e46dd44f8c4de0bad0",
+          "lineNumber": 7,
+          "lineText": "[Weirdcore][Traumacore]",
+          "linkTitle": "Weirdcore"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6982571c45c118bef36115bc:69780082ba17ef93917b0357",
+      "sourceConceptId": "aesthetics/scrapbox/6982571c45c118bef36115bc",
+      "targetConceptId": "aesthetics/scrapbox/69780082ba17ef93917b0357",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6982571c45c118bef36115bc",
+          "sourcePageTitle": "Concrete poetry",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Concrete%20poetry",
+          "sourceUpdated": 1775143614,
+          "sourceTextSha256": "6b837293ecc6eaf7d59345a89b3de91df0c11a699b4e44f83faeef3e7195dfb4",
+          "lineNumber": 10,
+          "lineText": "映像表現では10年頃からボカロシーンを中心に映像編集ソフト（特にAviutl）の高度な文字編集機能を応用して文字単位でのアニメーションが行われており、24年以降[岡本拓人 https://takuto-okamoto.com/]が参照されています。この表現はボカロMVにおいては[botanica]と親和性を持ちます。",
+          "linkTitle": "botanica"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6982571c45c118bef36115bc:697d4a856b55444c63ea55f8",
+      "sourceConceptId": "aesthetics/scrapbox/6982571c45c118bef36115bc",
+      "targetConceptId": "aesthetics/scrapbox/697d4a856b55444c63ea55f8",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6982571c45c118bef36115bc",
+          "sourcePageTitle": "Concrete poetry",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Concrete%20poetry",
+          "sourceUpdated": 1775143614,
+          "sourceTextSha256": "6b837293ecc6eaf7d59345a89b3de91df0c11a699b4e44f83faeef3e7195dfb4",
+          "lineNumber": 6,
+          "lineText": "[2DMV]",
+          "linkTitle": "2DMV"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6983649256f28b66cadc9cb1:69883a09c6f9c1f3a59cf3f2",
+      "sourceConceptId": "aesthetics/scrapbox/6983649256f28b66cadc9cb1",
+      "targetConceptId": "aesthetics/scrapbox/69883a09c6f9c1f3a59cf3f2",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6983649256f28b66cadc9cb1",
+          "sourcePageTitle": "Wacky Pomo",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Wacky%20Pomo",
+          "sourceUpdated": 1770632502,
+          "sourceTextSha256": "af57b789f8fd63923f1f6dc5a7fb08b9ea465ef04929032eb89c23715cfdbf6e",
+          "lineNumber": 7,
+          "lineText": "[Kidcore](Y2Kと本美学の接続)",
+          "linkTitle": "Kidcore"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6986901046ce7246cd07ba4a:6981721f2288d35fd9d985d3",
+      "sourceConceptId": "aesthetics/scrapbox/6986901046ce7246cd07ba4a",
+      "targetConceptId": "aesthetics/scrapbox/6981721f2288d35fd9d985d3",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6986901046ce7246cd07ba4a",
+          "sourcePageTitle": "Cyberpunk",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Cyberpunk",
+          "sourceUpdated": 1770632426,
+          "sourceTextSha256": "ced9ecc59e9a4ccdf25de41b14e7fe4fb00664ca749b552fd0b708c7186efaa6",
+          "lineNumber": 7,
+          "lineText": "[Y3K]",
+          "linkTitle": "Y3K"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69883a09c6f9c1f3a59cf3f2:69818c297d80a00ac75c1d5a",
+      "sourceConceptId": "aesthetics/scrapbox/69883a09c6f9c1f3a59cf3f2",
+      "targetConceptId": "aesthetics/scrapbox/69818c297d80a00ac75c1d5a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69883a09c6f9c1f3a59cf3f2",
+          "sourcePageTitle": "Kidcore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Kidcore",
+          "sourceUpdated": 1770632515,
+          "sourceTextSha256": "59e83ba270c9aab7c6be6537454f99a6cc204741bf5a0b397c27a996f4e2a3b2",
+          "lineNumber": 12,
+          "lineText": "[Dreamcore]系統の病みカルチャーと隣接していますが、Kidcoreの特色としてノスタルジーと消費賛美に寄り病み要素を排除します。また、[Wacky Pomo]から商業色を抜いたものです。",
+          "linkTitle": "Dreamcore"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69883a09c6f9c1f3a59cf3f2:6983649256f28b66cadc9cb1",
+      "sourceConceptId": "aesthetics/scrapbox/69883a09c6f9c1f3a59cf3f2",
+      "targetConceptId": "aesthetics/scrapbox/6983649256f28b66cadc9cb1",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69883a09c6f9c1f3a59cf3f2",
+          "sourcePageTitle": "Kidcore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Kidcore",
+          "sourceUpdated": 1770632515,
+          "sourceTextSha256": "59e83ba270c9aab7c6be6537454f99a6cc204741bf5a0b397c27a996f4e2a3b2",
+          "lineNumber": 12,
+          "lineText": "[Dreamcore]系統の病みカルチャーと隣接していますが、Kidcoreの特色としてノスタルジーと消費賛美に寄り病み要素を排除します。また、[Wacky Pomo]から商業色を抜いたものです。",
+          "linkTitle": "Wacky Pomo"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6988477c130b146cb582370e:6977f104df1b80cff76f6bf6",
+      "sourceConceptId": "aesthetics/scrapbox/6988477c130b146cb582370e",
+      "targetConceptId": "aesthetics/scrapbox/6977f104df1b80cff76f6bf6",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6988477c130b146cb582370e",
+          "sourcePageTitle": "Blingeecore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Blingeecore",
+          "sourceUpdated": 1770632535,
+          "sourceTextSha256": "67ba4ca8682a434218e0169f5459bc5372453e29e53c3b4316a7cb1fd71018a4",
+          "lineNumber": 8,
+          "lineText": "包含: 原義の[Y2K]、[Webcore]",
+          "linkTitle": "Webcore"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6988477c130b146cb582370e:6981531db8976d79c936f4ef",
+      "sourceConceptId": "aesthetics/scrapbox/6988477c130b146cb582370e",
+      "targetConceptId": "aesthetics/scrapbox/6981531db8976d79c936f4ef",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6988477c130b146cb582370e",
+          "sourcePageTitle": "Blingeecore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Blingeecore",
+          "sourceUpdated": 1770632535,
+          "sourceTextSha256": "67ba4ca8682a434218e0169f5459bc5372453e29e53c3b4316a7cb1fd71018a4",
+          "lineNumber": 8,
+          "lineText": "包含: 原義の[Y2K]、[Webcore]",
+          "linkTitle": "Y2K"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6988477c130b146cb582370e:698852a15fd47bc6bf3b9c70",
+      "sourceConceptId": "aesthetics/scrapbox/6988477c130b146cb582370e",
+      "targetConceptId": "aesthetics/scrapbox/698852a15fd47bc6bf3b9c70",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6988477c130b146cb582370e",
+          "sourcePageTitle": "Blingeecore",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Blingeecore",
+          "sourceUpdated": 1770632535,
+          "sourceTextSha256": "67ba4ca8682a434218e0169f5459bc5372453e29e53c3b4316a7cb1fd71018a4",
+          "lineNumber": 7,
+          "lineText": "[Xpiritualism]",
+          "linkTitle": "Xpiritualism"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:698852a15fd47bc6bf3b9c70:6982f86ca42a96fd0daa787f",
+      "sourceConceptId": "aesthetics/scrapbox/698852a15fd47bc6bf3b9c70",
+      "targetConceptId": "aesthetics/scrapbox/6982f86ca42a96fd0daa787f",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "698852a15fd47bc6bf3b9c70",
+          "sourcePageTitle": "Xpiritualism",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Xpiritualism",
+          "sourceUpdated": 1770632306,
+          "sourceTextSha256": "ed0726453572c620787a0a36896b136e84ab883033cb1ed431b99f864672c7a7",
+          "lineNumber": 11,
+          "lineText": "3rd.world.eliteによって同名のハッシュタグが使用されYabujinによってジャンルの方向性を規定けられた後、2022年以降ではRobloxアニメーションやハードスタイル音楽を扱った同美学の[Brainrot]版のような性質を持つ [Yabujincore][Jumpstyle Core]が派生するなどしてきました。",
+          "linkTitle": "Brainrot"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:698852a15fd47bc6bf3b9c70:69998a0b58b8fa96506687d3",
+      "sourceConceptId": "aesthetics/scrapbox/698852a15fd47bc6bf3b9c70",
+      "targetConceptId": "aesthetics/scrapbox/69998a0b58b8fa96506687d3",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "698852a15fd47bc6bf3b9c70",
+          "sourcePageTitle": "Xpiritualism",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Xpiritualism",
+          "sourceUpdated": 1770632306,
+          "sourceTextSha256": "ed0726453572c620787a0a36896b136e84ab883033cb1ed431b99f864672c7a7",
+          "lineNumber": 9,
+          "lineText": "インターネット上のスパム・詐欺広告に注目した、コラージュとフォトショップ加工を基調とした美学です。[Old Web]と比べスピリチュアリズム、エキゾチシズムの要素を多分に含みます。",
+          "linkTitle": "Old Web"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69891575f36ba10d237c1cc1:698924701c3a025785f68627",
+      "sourceConceptId": "aesthetics/scrapbox/69891575f36ba10d237c1cc1",
+      "targetConceptId": "aesthetics/scrapbox/698924701c3a025785f68627",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69891575f36ba10d237c1cc1",
+          "sourcePageTitle": "界隈曲",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%95%8C%E9%9A%88%E6%9B%B2",
+          "sourceUpdated": 1770603324,
+          "sourceTextSha256": "03d80c8ee9711fbf772e654f8c49d50c6c9d27c6f18df079a44eae04830613bc",
+          "lineNumber": 6,
+          "lineText": "[模倣曲]",
+          "linkTitle": "模倣曲"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69891d58c1f7dc940640c241:697e692912e079d3e21f0433",
+      "sourceConceptId": "aesthetics/scrapbox/69891d58c1f7dc940640c241",
+      "targetConceptId": "aesthetics/scrapbox/697e692912e079d3e21f0433",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69891d58c1f7dc940640c241",
+          "sourcePageTitle": "Vectorheart",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Vectorheart",
+          "sourceUpdated": 1770641851,
+          "sourceTextSha256": "d40d1055819b8b2fe1589575ac4b82b8016a16682eb7c52ece9be05b71457dee",
+          "lineNumber": 6,
+          "lineText": "[Neo-Vectorheart][フラットデザイン] [ローポリ] [Y2K]",
+          "linkTitle": "フラットデザイン"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69891d58c1f7dc940640c241:6981531db8976d79c936f4ef",
+      "sourceConceptId": "aesthetics/scrapbox/69891d58c1f7dc940640c241",
+      "targetConceptId": "aesthetics/scrapbox/6981531db8976d79c936f4ef",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69891d58c1f7dc940640c241",
+          "sourcePageTitle": "Vectorheart",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Vectorheart",
+          "sourceUpdated": 1770641851,
+          "sourceTextSha256": "d40d1055819b8b2fe1589575ac4b82b8016a16682eb7c52ece9be05b71457dee",
+          "lineNumber": 6,
+          "lineText": "[Neo-Vectorheart][フラットデザイン] [ローポリ] [Y2K]",
+          "linkTitle": "Y2K"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69891d58c1f7dc940640c241:69817d59c73cb119f22c122a",
+      "sourceConceptId": "aesthetics/scrapbox/69891d58c1f7dc940640c241",
+      "targetConceptId": "aesthetics/scrapbox/69817d59c73cb119f22c122a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69891d58c1f7dc940640c241",
+          "sourcePageTitle": "Vectorheart",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Vectorheart",
+          "sourceUpdated": 1770641851,
+          "sourceTextSha256": "d40d1055819b8b2fe1589575ac4b82b8016a16682eb7c52ece9be05b71457dee",
+          "lineNumber": 6,
+          "lineText": "[Neo-Vectorheart][フラットデザイン] [ローポリ] [Y2K]",
+          "linkTitle": "ローポリ"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6989cd430bff0079b10d0543:69817d59c73cb119f22c122a",
+      "sourceConceptId": "aesthetics/scrapbox/6989cd430bff0079b10d0543",
+      "targetConceptId": "aesthetics/scrapbox/69817d59c73cb119f22c122a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6989cd430bff0079b10d0543",
+          "sourcePageTitle": "うごメモ風",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%86%E3%81%94%E3%83%A1%E3%83%A2%E9%A2%A8",
+          "sourceUpdated": 1774725916,
+          "sourceTextSha256": "a06bac77b301951cdcaa9ab323d8099dce5e0cb959dbda2b7f1ac77f421dfbeb",
+          "lineNumber": 18,
+          "lineText": "ニコニコ動画の[https://www.nicovideo.jp/tag/PVつけてみた+うごメモ PVつけてみた]、YouTubeの[https://www.youtube.com/hashtag/うごメモ うごメモハッシュタグ]などの既存のオリジナルボカロ曲の二次創作PVと制作者層や表現の文脈が近い一方で、[ローポリ]や[ドット絵]のようなリバイバルの気運があるような印象があります[kofu.icon]",
+          "linkTitle": "ローポリ"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:6989cd430bff0079b10d0543:69885bd53251a62250c7b15d",
+      "sourceConceptId": "aesthetics/scrapbox/6989cd430bff0079b10d0543",
+      "targetConceptId": "aesthetics/scrapbox/69885bd53251a62250c7b15d",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "6989cd430bff0079b10d0543",
+          "sourcePageTitle": "うごメモ風",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%86%E3%81%94%E3%83%A1%E3%83%A2%E9%A2%A8",
+          "sourceUpdated": 1774725916,
+          "sourceTextSha256": "a06bac77b301951cdcaa9ab323d8099dce5e0cb959dbda2b7f1ac77f421dfbeb",
+          "lineNumber": 6,
+          "lineText": "[Animation meme]",
+          "linkTitle": "Animation meme"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:698aec91dcc8fb716bca7fbb:6981721f2288d35fd9d985d3",
+      "sourceConceptId": "aesthetics/scrapbox/698aec91dcc8fb716bca7fbb",
+      "targetConceptId": "aesthetics/scrapbox/6981721f2288d35fd9d985d3",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "698aec91dcc8fb716bca7fbb",
+          "sourcePageTitle": "steampunk",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/steampunk",
+          "sourceUpdated": 1770773565,
+          "sourceTextSha256": "78b621a3c65e0ffecf0beb232a0d844316708c97d2400ec6d017d904a16297e0",
+          "lineNumber": 8,
+          "lineText": "[Y3K][Cyberpunk]",
+          "linkTitle": "Y3K"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:698aec91dcc8fb716bca7fbb:6986901046ce7246cd07ba4a",
+      "sourceConceptId": "aesthetics/scrapbox/698aec91dcc8fb716bca7fbb",
+      "targetConceptId": "aesthetics/scrapbox/6986901046ce7246cd07ba4a",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "698aec91dcc8fb716bca7fbb",
+          "sourcePageTitle": "steampunk",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/steampunk",
+          "sourceUpdated": 1770773565,
+          "sourceTextSha256": "78b621a3c65e0ffecf0beb232a0d844316708c97d2400ec6d017d904a16297e0",
+          "lineNumber": 8,
+          "lineText": "[Y3K][Cyberpunk]",
+          "linkTitle": "Cyberpunk"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:698d2d65a5de44b5882705f1:6a390af77deb9d3f8e0a7d86",
+      "sourceConceptId": "aesthetics/scrapbox/698d2d65a5de44b5882705f1",
+      "targetConceptId": "aesthetics/scrapbox/6a390af77deb9d3f8e0a7d86",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "698d2d65a5de44b5882705f1",
+          "sourcePageTitle": "ジェネ系",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%B8%E3%82%A7%E3%83%8D%E7%B3%BB",
+          "sourceUpdated": 1783585354,
+          "sourceTextSha256": "0db76cfcb851dfffefe0a39f5b3b1a4ce5d4debcbf36fa9a150a9160a4ed0765",
+          "lineNumber": 18,
+          "lineText": "[AI時代の美学 https://medium.com/design-bootcamp/aesthetics-in-the-ai-era-visual-web-design-trends-for-2026-5a0f75a10e98]において、[* Monospaceのフォントを利用したブルータリズムWebの美学][Technical Mono]、[* 監視カメラ映像をモチーフにし、画像認識表現などを含むこともある][Surveillance Aesthetic]等が挙げられ、日本語圏でもTama Design University講義プログラムの「[AI特論 第1回「逆行する美学」 https://www.youtube.com/watch?v=gmBo-C11we4]」で紹介された。",
+          "linkTitle": "Surveillance Aesthetic"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69935a632cdb207010fd495a:697d4a856b55444c63ea55f8",
+      "sourceConceptId": "aesthetics/scrapbox/69935a632cdb207010fd495a",
+      "targetConceptId": "aesthetics/scrapbox/697d4a856b55444c63ea55f8",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69935a632cdb207010fd495a",
+          "sourcePageTitle": "PV（ニコニコ動画）",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/PV%EF%BC%88%E3%83%8B%E3%82%B3%E3%83%8B%E3%82%B3%E5%8B%95%E7%94%BB%EF%BC%89",
+          "sourceUpdated": 1771265725,
+          "sourceTextSha256": "09587208e33e8c9444a8a69a024c7a478e795ae1a0eb59baa76cc2d3d5c9e6ad",
+          "lineNumber": 7,
+          "lineText": "[2DMV]",
+          "linkTitle": "2DMV"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69998a0b58b8fa96506687d3:6977f104df1b80cff76f6bf6",
+      "sourceConceptId": "aesthetics/scrapbox/69998a0b58b8fa96506687d3",
+      "targetConceptId": "aesthetics/scrapbox/6977f104df1b80cff76f6bf6",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69998a0b58b8fa96506687d3",
+          "sourcePageTitle": "Old Web",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Old%20Web",
+          "sourceUpdated": 1771681102,
+          "sourceTextSha256": "c026768c4be87ee5030de8ef230c7490a498e139a2113b3ae15fe23b8f262e54",
+          "lineNumber": 7,
+          "lineText": "[Webcore]",
+          "linkTitle": "Webcore"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69998a0b58b8fa96506687d3:69998bc6c093689fd722efb7",
+      "sourceConceptId": "aesthetics/scrapbox/69998a0b58b8fa96506687d3",
+      "targetConceptId": "aesthetics/scrapbox/69998bc6c093689fd722efb7",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69998a0b58b8fa96506687d3",
+          "sourcePageTitle": "Old Web",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/Old%20Web",
+          "sourceUpdated": 1771681102,
+          "sourceTextSha256": "c026768c4be87ee5030de8ef230c7490a498e139a2113b3ae15fe23b8f262e54",
+          "lineNumber": 8,
+          "lineText": "[ブルータリズム（Web）]",
+          "linkTitle": "ブルータリズム（Web）"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69998bc6c093689fd722efb7:697d4a856b55444c63ea55f8",
+      "sourceConceptId": "aesthetics/scrapbox/69998bc6c093689fd722efb7",
+      "targetConceptId": "aesthetics/scrapbox/697d4a856b55444c63ea55f8",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69998bc6c093689fd722efb7",
+          "sourcePageTitle": "ブルータリズム（Web）",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%BF%E3%83%AA%E3%82%BA%E3%83%A0%EF%BC%88Web%EF%BC%89",
+          "sourceUpdated": 1771675014,
+          "sourceTextSha256": "6200be8d78d68df875d71ef53075eca648f52eb0a8e8b4fcd8e564f675be47c8",
+          "lineNumber": 12,
+          "lineText": "[2DMV]のデザインの参照になることが多い。",
+          "linkTitle": "2DMV"
+        }
+      ]
+    },
+    {
+      "id": "cosense-link:69c81457a3c48bf205fc9e81:697d42f4bacf9a035f7a1583",
+      "sourceConceptId": "aesthetics/scrapbox/69c81457a3c48bf205fc9e81",
+      "targetConceptId": "aesthetics/scrapbox/697d42f4bacf9a035f7a1583",
+      "relationType": "associated-with",
+      "direction": "undirected",
+      "reviewStatus": "unreviewed",
+      "confidence": "unassessed",
+      "basis": "same-project-link",
+      "rationale": "同一Project内リンクは閲覧上の近接性だけを示し、因果・継承・同時代性を主張しない。",
+      "evidence": [
+        {
+          "kind": "source-snapshot-line",
+          "locale": "ja",
+          "sourcePageId": "69c81457a3c48bf205fc9e81",
+          "sourcePageTitle": "インターネット風景系概念",
+          "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+          "sourceUpdated": 1783936931,
+          "sourceTextSha256": "b4ae39632706ec357609942e9a213fe88ec3ad52d2ba9f02502460f6c70837d9",
+          "lineNumber": 9,
+          "lineText": "Liminal spaceから外れた文脈として「ポスト・リミナルスペース」として扱われる側面が有り、[Liminal space]にも説明があります。",
+          "linkTitle": "Liminal space"
+        }
+      ]
+    }
+  ],
+  "skippedLinks": [
+    {
+      "sourcePageId": "6977ad0e5f88b7abe4a99125",
+      "sourcePageTitle": "Technozen",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Technozen",
+      "linkTitle": "行政core",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6977ad0e5f88b7abe4a99125",
+        "sourcePageTitle": "Technozen",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Technozen",
+        "sourceUpdated": 1770153797,
+        "sourceTextSha256": "1a1be0c53ff11ba8b346ff25cdeb822bee2ea06e78d5d3bd3758175d6a4e643f",
+        "lineNumber": 8,
+        "lineText": "[万博core][未定：10年代Webcore][行政core]",
+        "linkTitle": "行政core"
+      }
+    },
+    {
+      "sourcePageId": "6977addd521bdf0ca3c5a23f",
+      "sourcePageTitle": "このProject（美学ウィキ）について。",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%93%E3%81%AEProject%EF%BC%88%E7%BE%8E%E5%AD%A6%E3%82%A6%E3%82%A3%E3%82%AD%EF%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%82",
+      "linkTitle": "ディスカッション",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6977addd521bdf0ca3c5a23f",
+        "sourcePageTitle": "このProject（美学ウィキ）について。",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%93%E3%81%AEProject%EF%BC%88%E7%BE%8E%E5%AD%A6%E3%82%A6%E3%82%A3%E3%82%AD%EF%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%82",
+        "sourceUpdated": 1771131559,
+        "sourceTextSha256": "fb30a17da327e5e033e0d31c7e85b0ff1c8799d14ec0ff30c374db3d86d3cddd",
+        "lineNumber": 25,
+        "lineText": "広範囲に影響した問題とその対応については[ディスカッション]にて行っています。",
+        "linkTitle": "ディスカッション"
+      }
+    },
+    {
+      "sourcePageId": "6977addd521bdf0ca3c5a23f",
+      "sourcePageTitle": "このProject（美学ウィキ）について。",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%93%E3%81%AEProject%EF%BC%88%E7%BE%8E%E5%AD%A6%E3%82%A6%E3%82%A3%E3%82%AD%EF%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%82",
+      "linkTitle": "テンプレート",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6977addd521bdf0ca3c5a23f",
+        "sourcePageTitle": "このProject（美学ウィキ）について。",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%93%E3%81%AEProject%EF%BC%88%E7%BE%8E%E5%AD%A6%E3%82%A6%E3%82%A3%E3%82%AD%EF%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%82",
+        "sourceUpdated": 1771131559,
+        "sourceTextSha256": "fb30a17da327e5e033e0d31c7e85b0ff1c8799d14ec0ff30c374db3d86d3cddd",
+        "lineNumber": 29,
+        "lineText": "　[テンプレート]をコピペします。",
+        "linkTitle": "テンプレート"
+      }
+    },
+    {
+      "sourcePageId": "6977addd521bdf0ca3c5a23f",
+      "sourcePageTitle": "このProject（美学ウィキ）について。",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%93%E3%81%AEProject%EF%BC%88%E7%BE%8E%E5%AD%A6%E3%82%A6%E3%82%A3%E3%82%AD%EF%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%82",
+      "linkTitle": "メモ",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6977addd521bdf0ca3c5a23f",
+        "sourcePageTitle": "このProject（美学ウィキ）について。",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%93%E3%81%AEProject%EF%BC%88%E7%BE%8E%E5%AD%A6%E3%82%A6%E3%82%A3%E3%82%AD%EF%BC%89%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%82",
+        "sourceUpdated": 1771131559,
+        "sourceTextSha256": "fb30a17da327e5e033e0d31c7e85b0ff1c8799d14ec0ff30c374db3d86d3cddd",
+        "lineNumber": 24,
+        "lineText": "メンバーになったらこのページや[メモ]を参考に描いてみてください。",
+        "linkTitle": "メモ"
+      }
+    },
+    {
+      "sourcePageId": "6977e691e21794c7cae4c3ba",
+      "sourcePageTitle": "Frutiger Aero",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Frutiger%20Aero",
+      "linkTitle": "Liquid Glass",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6977e691e21794c7cae4c3ba",
+        "sourcePageTitle": "Frutiger Aero",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Frutiger%20Aero",
+        "sourceUpdated": 1771919973,
+        "sourceTextSha256": "81486e7e9b6760854812f61591d4671fdbf6cf49865b5aa865ff7c03c0be9ab1",
+        "lineNumber": 7,
+        "lineText": "[Technozen][Liquid Glass][Frutiger Metro]",
+        "linkTitle": "Liquid Glass"
+      }
+    },
+    {
+      "sourcePageId": "6977e9820089c442f3720f24",
+      "sourcePageTitle": "Frutiger Metro",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Frutiger%20Metro",
+      "linkTitle": "Vectordelia",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6977e9820089c442f3720f24",
+        "sourcePageTitle": "Frutiger Metro",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Frutiger%20Metro",
+        "sourceUpdated": 1770637301,
+        "sourceTextSha256": "1e512296cea440cebf769fef8c66068615bb9afa449d171b4d1f00deb201b5cb",
+        "lineNumber": 11,
+        "lineText": "Frutiger MetroはAesthetics WikiによってFrutigerファミリーと考え命名されましたが、上記のように\"Metro\" UIとの思想的差異を反映し『[Vectordelia]』に改名しています。しかしながらネット上では依然「Frutiger Metro」の語が用いられています。",
+        "linkTitle": "Vectordelia"
+      }
+    },
+    {
+      "sourcePageId": "6977f104df1b80cff76f6bf6",
+      "sourcePageTitle": "Webcore",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Webcore",
+      "linkTitle": "Desktop Core",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6977f104df1b80cff76f6bf6",
+        "sourcePageTitle": "Webcore",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Webcore",
+        "sourceUpdated": 1781501069,
+        "sourceTextSha256": "7b801a50bf476967cd5cd16b5bb4f4cb931833f7a57e6769b04b02b6aa2e9747",
+        "lineNumber": 16,
+        "lineText": "Webcoreの流れと並行し、現在の20年代の国内MVシーンにはWindows XPのUIデザインを扱う動きがあります。（[Interface Nostalgia]または[Desktop Core][参考ブログ https://medium.com/design-bootcamp/aesthetics-in-the-ai-era-visual-web-design-trends-for-2026-5a0f75a10e98]）",
+        "linkTitle": "Desktop Core"
+      }
+    },
+    {
+      "sourcePageId": "6977f104df1b80cff76f6bf6",
+      "sourcePageTitle": "Webcore",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Webcore",
+      "linkTitle": "Interface Nostalgia",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6977f104df1b80cff76f6bf6",
+        "sourcePageTitle": "Webcore",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Webcore",
+        "sourceUpdated": 1781501069,
+        "sourceTextSha256": "7b801a50bf476967cd5cd16b5bb4f4cb931833f7a57e6769b04b02b6aa2e9747",
+        "lineNumber": 16,
+        "lineText": "Webcoreの流れと並行し、現在の20年代の国内MVシーンにはWindows XPのUIデザインを扱う動きがあります。（[Interface Nostalgia]または[Desktop Core][参考ブログ https://medium.com/design-bootcamp/aesthetics-in-the-ai-era-visual-web-design-trends-for-2026-5a0f75a10e98]）",
+        "linkTitle": "Interface Nostalgia"
+      }
+    },
+    {
+      "sourcePageId": "6977f104df1b80cff76f6bf6",
+      "sourcePageTitle": "Webcore",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Webcore",
+      "linkTitle": "PS1 Style",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6977f104df1b80cff76f6bf6",
+        "sourcePageTitle": "Webcore",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Webcore",
+        "sourceUpdated": 1781501069,
+        "sourceTextSha256": "7b801a50bf476967cd5cd16b5bb4f4cb931833f7a57e6769b04b02b6aa2e9747",
+        "lineNumber": 11,
+        "lineText": "2020年、Joel Gによる『[ENA https://www.youtube.com/watch?v=xUwJWv38FpY]』によって、ドット絵や[PS1 Style]に近いローポリモデル、シュルレアリスム等と強く関連づけられてリバイバルしました。",
+        "linkTitle": "PS1 Style"
+      }
+    },
+    {
+      "sourcePageId": "697d42f4bacf9a035f7a1583",
+      "sourcePageTitle": "Liminal space",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+      "linkTitle": "Analog horror",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d42f4bacf9a035f7a1583",
+        "sourcePageTitle": "Liminal space",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+        "sourceUpdated": 1782721979,
+        "sourceTextSha256": "760a3439565e0f83d5bd49dee68c438e6380e2bd52925953fe2279cbb8313f2e",
+        "lineNumber": 20,
+        "lineText": "『[The Backrooms https://youtu.be/H4dGpz6cnHo?si=SvVqzdeYYRANS9pu]』はLiminal spaceをモチーフに[Analog horror]と接続した具体的なコンテンツであり、この作品の派生としてLiminal spaceではしばしばホラー表現やVHSノイズなどの[モキュメンタリー]、[found footage]の要素を含みます。",
+        "linkTitle": "Analog horror"
+      }
+    },
+    {
+      "sourcePageId": "697d42f4bacf9a035f7a1583",
+      "sourcePageTitle": "Liminal space",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+      "linkTitle": "found footage",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d42f4bacf9a035f7a1583",
+        "sourcePageTitle": "Liminal space",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+        "sourceUpdated": 1782721979,
+        "sourceTextSha256": "760a3439565e0f83d5bd49dee68c438e6380e2bd52925953fe2279cbb8313f2e",
+        "lineNumber": 20,
+        "lineText": "『[The Backrooms https://youtu.be/H4dGpz6cnHo?si=SvVqzdeYYRANS9pu]』はLiminal spaceをモチーフに[Analog horror]と接続した具体的なコンテンツであり、この作品の派生としてLiminal spaceではしばしばホラー表現やVHSノイズなどの[モキュメンタリー]、[found footage]の要素を含みます。",
+        "linkTitle": "found footage"
+      }
+    },
+    {
+      "sourcePageId": "697d42f4bacf9a035f7a1583",
+      "sourcePageTitle": "Liminal space",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+      "linkTitle": "Mallsoft",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d42f4bacf9a035f7a1583",
+        "sourcePageTitle": "Liminal space",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+        "sourceUpdated": 1782721979,
+        "sourceTextSha256": "760a3439565e0f83d5bd49dee68c438e6380e2bd52925953fe2279cbb8313f2e",
+        "lineNumber": 12,
+        "lineText": "消費的豊かさへのノスタルジアとして共通する美学として、サブジャンルの[Mallsoft]や初期の[Vaporwave]と関連があります。",
+        "linkTitle": "Mallsoft"
+      }
+    },
+    {
+      "sourcePageId": "697d42f4bacf9a035f7a1583",
+      "sourcePageTitle": "Liminal space",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+      "linkTitle": "WaterDreamCore",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d42f4bacf9a035f7a1583",
+        "sourcePageTitle": "Liminal space",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Liminal%20space",
+        "sourceUpdated": 1782721979,
+        "sourceTextSha256": "760a3439565e0f83d5bd49dee68c438e6380e2bd52925953fe2279cbb8313f2e",
+        "lineNumber": 15,
+        "lineText": "また、インターネット風景系概念でよく見られる、ある一アカウントの名前が美学を表し、そのフォロワーがつくことで広まる現象が見られます（[WaterDreamCore][例 https://x.com/dwururu_0311/status/2060502357562314971]）。",
+        "linkTitle": "WaterDreamCore"
+      }
+    },
+    {
+      "sourcePageId": "697d4768e27ae63e1a6913d8",
+      "sourcePageTitle": "モキュメンタリー",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A2%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AA%E3%83%BC",
+      "linkTitle": "Analog horror",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d4768e27ae63e1a6913d8",
+        "sourcePageTitle": "モキュメンタリー",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A2%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AA%E3%83%BC",
+        "sourceUpdated": 1770704154,
+        "sourceTextSha256": "266894f938bb62beb745a9d918a7be432e949dd1050d790319441396e910a194",
+        "lineNumber": 6,
+        "lineText": "[Liminal space][画面内映像][Analog horror]",
+        "linkTitle": "Analog horror"
+      }
+    },
+    {
+      "sourcePageId": "697d4768e27ae63e1a6913d8",
+      "sourcePageTitle": "モキュメンタリー",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A2%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AA%E3%83%BC",
+      "linkTitle": "found footage",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d4768e27ae63e1a6913d8",
+        "sourcePageTitle": "モキュメンタリー",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A2%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AA%E3%83%BC",
+        "sourceUpdated": 1770704154,
+        "sourceTextSha256": "266894f938bb62beb745a9d918a7be432e949dd1050d790319441396e910a194",
+        "lineNumber": 11,
+        "lineText": "映像表現においてはモキュメンタリーの一種として[found footage]があります。VHSノイズ、手ブレの強いPOVなど平成初期の撮影動画を模した表現をよく用いられます。テレビ放送のドキュメンタリーを模した形式のものも多くあります。",
+        "linkTitle": "found footage"
+      }
+    },
+    {
+      "sourcePageId": "697d4a856b55444c63ea55f8",
+      "sourcePageTitle": "2DMV",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/2DMV",
+      "linkTitle": "BGA",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d4a856b55444c63ea55f8",
+        "sourcePageTitle": "2DMV",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/2DMV",
+        "sourceUpdated": 1771596926,
+        "sourceTextSha256": "5d88b2d16b77d3740db273ebc75b9d3dca8ebb80150c6f11be7824fa7fd1d974",
+        "lineNumber": 6,
+        "lineText": "[BGA]（からの発展）",
+        "linkTitle": "BGA"
+      }
+    },
+    {
+      "sourcePageId": "697d4a856b55444c63ea55f8",
+      "sourcePageTitle": "2DMV",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/2DMV",
+      "linkTitle": "Chrometype",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d4a856b55444c63ea55f8",
+        "sourcePageTitle": "2DMV",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/2DMV",
+        "sourceUpdated": 1771596926,
+        "sourceTextSha256": "5d88b2d16b77d3740db273ebc75b9d3dca8ebb80150c6f11be7824fa7fd1d974",
+        "lineNumber": 19,
+        "lineText": "[Chrometype]に見られるようなグリフデザインが書籍デザイン・ジャケットデザインを介してPinterestやbehanceで集約され、映像制作のリファレンスに応用されています。",
+        "linkTitle": "Chrometype"
+      }
+    },
+    {
+      "sourcePageId": "697d4a856b55444c63ea55f8",
+      "sourcePageTitle": "2DMV",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/2DMV",
+      "linkTitle": "文字PV",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d4a856b55444c63ea55f8",
+        "sourcePageTitle": "2DMV",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/2DMV",
+        "sourceUpdated": 1771596926,
+        "sourceTextSha256": "5d88b2d16b77d3740db273ebc75b9d3dca8ebb80150c6f11be7824fa7fd1d974",
+        "lineNumber": 7,
+        "lineText": "[文字PV]",
+        "linkTitle": "文字PV"
+      }
+    },
+    {
+      "sourcePageId": "697d55bcee83fb1b7fa3e74c",
+      "sourcePageTitle": "Acid Graphics",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Acid%20Graphics",
+      "linkTitle": "Acid house",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d55bcee83fb1b7fa3e74c",
+        "sourcePageTitle": "Acid Graphics",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Acid%20Graphics",
+        "sourceUpdated": 1769823070,
+        "sourceTextSha256": "0a7cfbeef3c4cd589e1d5256d5e80c3efe8825f14b88c384a2279a50ae997809",
+        "lineNumber": 9,
+        "lineText": "[Acid house]のJacket・フライヤーデザインのリバイバル表現です。",
+        "linkTitle": "Acid house"
+      }
+    },
+    {
+      "sourcePageId": "697d55bcee83fb1b7fa3e74c",
+      "sourcePageTitle": "Acid Graphics",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Acid%20Graphics",
+      "linkTitle": "Chrometype",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d55bcee83fb1b7fa3e74c",
+        "sourcePageTitle": "Acid Graphics",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Acid%20Graphics",
+        "sourceUpdated": 1769823070,
+        "sourceTextSha256": "0a7cfbeef3c4cd589e1d5256d5e80c3efe8825f14b88c384a2279a50ae997809",
+        "lineNumber": 12,
+        "lineText": "[Chrometype]は極端な先鋭化と解けるように動く直線部分を特徴とするセリフ体です。",
+        "linkTitle": "Chrometype"
+      }
+    },
+    {
+      "sourcePageId": "697d55bcee83fb1b7fa3e74c",
+      "sourcePageTitle": "Acid Graphics",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Acid%20Graphics",
+      "linkTitle": "Liquid Chrome",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d55bcee83fb1b7fa3e74c",
+        "sourcePageTitle": "Acid Graphics",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Acid%20Graphics",
+        "sourceUpdated": 1769823070,
+        "sourceTextSha256": "0a7cfbeef3c4cd589e1d5256d5e80c3efe8825f14b88c384a2279a50ae997809",
+        "lineNumber": 14,
+        "lineText": "aespaのロゴデザインによって、金属光沢のある有機的なグリフ（[Liquid Chrome]）のタイポグラフィが広まりました。",
+        "linkTitle": "Liquid Chrome"
+      }
+    },
+    {
+      "sourcePageId": "697d5d300df413981be5064d",
+      "sourcePageTitle": "画面内映像",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%94%BB%E9%9D%A2%E5%86%85%E6%98%A0%E5%83%8F",
+      "linkTitle": "デジアナ",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697d5d300df413981be5064d",
+        "sourcePageTitle": "画面内映像",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%94%BB%E9%9D%A2%E5%86%85%E6%98%A0%E5%83%8F",
+        "sourceUpdated": 1774726048,
+        "sourceTextSha256": "1e42609b4d0a90a2e00327ff9fac7d4a7d2264d776c7fc5b2d5160cea88d802d",
+        "lineNumber": 6,
+        "lineText": "[デジアナ]",
+        "linkTitle": "デジアナ"
+      }
+    },
+    {
+      "sourcePageId": "697daddf918a1f10474e4dbc",
+      "sourcePageTitle": "未定：ホームビデオ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E6%9C%AA%E5%AE%9A%EF%BC%9A%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%93%E3%83%87%E3%82%AA",
+      "linkTitle": "アナログホラー",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697daddf918a1f10474e4dbc",
+        "sourcePageTitle": "未定：ホームビデオ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E6%9C%AA%E5%AE%9A%EF%BC%9A%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%93%E3%83%87%E3%82%AA",
+        "sourceUpdated": 1770166270,
+        "sourceTextSha256": "a997d4a85dede37dab83a832478de15bd0f10f96ca7880d5fe3ed69c90149ceb",
+        "lineNumber": 6,
+        "lineText": "[アナログホラー]",
+        "linkTitle": "アナログホラー"
+      }
+    },
+    {
+      "sourcePageId": "697daddf918a1f10474e4dbc",
+      "sourcePageTitle": "未定：ホームビデオ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E6%9C%AA%E5%AE%9A%EF%BC%9A%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%93%E3%83%87%E3%82%AA",
+      "linkTitle": "部屋core",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697daddf918a1f10474e4dbc",
+        "sourcePageTitle": "未定：ホームビデオ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E6%9C%AA%E5%AE%9A%EF%BC%9A%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%93%E3%83%87%E3%82%AA",
+        "sourceUpdated": 1770166270,
+        "sourceTextSha256": "a997d4a85dede37dab83a832478de15bd0f10f96ca7880d5fe3ed69c90149ceb",
+        "lineNumber": 7,
+        "lineText": "[部屋core]",
+        "linkTitle": "部屋core"
+      }
+    },
+    {
+      "sourcePageId": "697dae7e918a1f10474e53ef",
+      "sourcePageTitle": "未定：実写内白線画イラスト",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E6%9C%AA%E5%AE%9A%EF%BC%9A%E5%AE%9F%E5%86%99%E5%86%85%E7%99%BD%E7%B7%9A%E7%94%BB%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88",
+      "linkTitle": "実写内イラスト",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697dae7e918a1f10474e53ef",
+        "sourcePageTitle": "未定：実写内白線画イラスト",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E6%9C%AA%E5%AE%9A%EF%BC%9A%E5%AE%9F%E5%86%99%E5%86%85%E7%99%BD%E7%B7%9A%E7%94%BB%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88",
+        "sourceUpdated": 1770166631,
+        "sourceTextSha256": "145e3434b68186d80701040cafc12d0cc9db7f8dc7d5e11f0b10e7b6cd76fb58",
+        "lineNumber": 10,
+        "lineText": "[実写内イラスト]の一部。作編曲者が映像を担当していることが多い。",
+        "linkTitle": "実写内イラスト"
+      }
+    },
+    {
+      "sourcePageId": "697e692912e079d3e21f0433",
+      "sourcePageTitle": "フラットデザイン",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3",
+      "linkTitle": "corporate memphis",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "697e692912e079d3e21f0433",
+        "sourcePageTitle": "フラットデザイン",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%95%E3%83%A9%E3%83%83%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3",
+        "sourceUpdated": 1771266354,
+        "sourceTextSha256": "e43b153de0911cd09861e5f808df5b4448ae5a19d44efd6ccd6d1e0c27a5b12b",
+        "lineNumber": 6,
+        "lineText": "[未定：主線なし][corporate memphis]",
+        "linkTitle": "corporate memphis"
+      }
+    },
+    {
+      "sourcePageId": "6981531db8976d79c936f4ef",
+      "sourcePageTitle": "Y2K",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y2K",
+      "linkTitle": "Cybercore",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6981531db8976d79c936f4ef",
+        "sourcePageTitle": "Y2K",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y2K",
+        "sourceUpdated": 1770597377,
+        "sourceTextSha256": "f31be4a25a4682600db6102a03cfd9bfbc2133a3f164c7c54ea9b2b5f87db2fa",
+        "lineNumber": 17,
+        "lineText": "定義の範囲を狭めるため[Y2K Futurism]または[Cybercore]と呼ぶ場合があります。",
+        "linkTitle": "Cybercore"
+      }
+    },
+    {
+      "sourcePageId": "6981531db8976d79c936f4ef",
+      "sourcePageTitle": "Y2K",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y2K",
+      "linkTitle": "Y2K Futurism",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6981531db8976d79c936f4ef",
+        "sourcePageTitle": "Y2K",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y2K",
+        "sourceUpdated": 1770597377,
+        "sourceTextSha256": "f31be4a25a4682600db6102a03cfd9bfbc2133a3f164c7c54ea9b2b5f87db2fa",
+        "lineNumber": 17,
+        "lineText": "定義の範囲を狭めるため[Y2K Futurism]または[Cybercore]と呼ぶ場合があります。",
+        "linkTitle": "Y2K Futurism"
+      }
+    },
+    {
+      "sourcePageId": "69815a56c5b4c2ccff49ff14",
+      "sourcePageTitle": "美学ミーム",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+      "linkTitle": "Cottagecore",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69815a56c5b4c2ccff49ff14",
+        "sourcePageTitle": "美学ミーム",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+        "sourceUpdated": 1771131587,
+        "sourceTextSha256": "2044b75b5d986cd885ca0d6f492e770a8de14e52be8f98acd5a1863fd68c556a",
+        "lineNumber": 31,
+        "lineText": "2020年以降、TikTokで[Cottagecore]などのファッション美学がタグによって拡散し、同時期Aesthetics Wikiも急成長を遂げました。",
+        "linkTitle": "Cottagecore"
+      }
+    },
+    {
+      "sourcePageId": "69815a56c5b4c2ccff49ff14",
+      "sourcePageTitle": "美学ミーム",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+      "linkTitle": "Hardcore",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69815a56c5b4c2ccff49ff14",
+        "sourcePageTitle": "美学ミーム",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+        "sourceUpdated": 1771131587,
+        "sourceTextSha256": "2044b75b5d986cd885ca0d6f492e770a8de14e52be8f98acd5a1863fd68c556a",
+        "lineNumber": 13,
+        "lineText": "複数作品を連続的に指す語として、「[Cyberpunk]」や「[Hardcore]」といったマイクロジャンルが登場し、「-punk」や「-core」といった今日のインターネット美学の接尾辞の基礎となりました。",
+        "linkTitle": "Hardcore"
+      }
+    },
+    {
+      "sourcePageId": "69815a56c5b4c2ccff49ff14",
+      "sourcePageTitle": "美学ミーム",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+      "linkTitle": "McBling",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69815a56c5b4c2ccff49ff14",
+        "sourcePageTitle": "美学ミーム",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+        "sourceUpdated": 1771131587,
+        "sourceTextSha256": "2044b75b5d986cd885ca0d6f492e770a8de14e52be8f98acd5a1863fd68c556a",
+        "lineNumber": 26,
+        "lineText": "この頃に[Y2K]及び[McBling]や[Frutiger Aero]が発見、命名されます。",
+        "linkTitle": "McBling"
+      }
+    },
+    {
+      "sourcePageId": "69815a56c5b4c2ccff49ff14",
+      "sourcePageTitle": "美学ミーム",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+      "linkTitle": "Seapunk",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69815a56c5b4c2ccff49ff14",
+        "sourcePageTitle": "美学ミーム",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E7%BE%8E%E5%AD%A6%E3%83%9F%E3%83%BC%E3%83%A0",
+        "sourceUpdated": 1771131587,
+        "sourceTextSha256": "2044b75b5d986cd885ca0d6f492e770a8de14e52be8f98acd5a1863fd68c556a",
+        "lineNumber": 16,
+        "lineText": "2011年、最初期の美学ミームの一である[Seapunk]という「海洋や海に関するライフスタイルの美学」がTwitter上でインターネットミームとして発生しました。",
+        "linkTitle": "Seapunk"
+      }
+    },
+    {
+      "sourcePageId": "6981721f2288d35fd9d985d3",
+      "sourcePageTitle": "Y3K",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y3K",
+      "linkTitle": "Y2K Futurism",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6981721f2288d35fd9d985d3",
+        "sourcePageTitle": "Y3K",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Y3K",
+        "sourceUpdated": 1770632387,
+        "sourceTextSha256": "603754ee7e17823b4872bd86fc6e419f78c587d157798aa137537203033f6870",
+        "lineNumber": 12,
+        "lineText": "aespa等のK-popによる中国・韓国ブランドの国内への可視化に端を発する[Y2K Futurism]の直系の美学であり、22年頃から小紅書で話題になりました。国内ではその後徐々に盛り上がり、23年には各種ネットメディアが言及を始めました。",
+        "linkTitle": "Y2K Futurism"
+      }
+    },
+    {
+      "sourcePageId": "69818c297d80a00ac75c1d5a",
+      "sourcePageTitle": "Dreamcore",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Dreamcore",
+      "linkTitle": "Traumacore",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69818c297d80a00ac75c1d5a",
+        "sourcePageTitle": "Dreamcore",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Dreamcore",
+        "sourceUpdated": 1776237649,
+        "sourceTextSha256": "7208384e21649f23890c9a1a040e3894f11e80e72ac5d5e46dd44f8c4de0bad0",
+        "lineNumber": 7,
+        "lineText": "[Weirdcore][Traumacore]",
+        "linkTitle": "Traumacore"
+      }
+    },
+    {
+      "sourcePageId": "69818c297d80a00ac75c1d5a",
+      "sourcePageTitle": "Dreamcore",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Dreamcore",
+      "linkTitle": "個人サイト",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69818c297d80a00ac75c1d5a",
+        "sourcePageTitle": "Dreamcore",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Dreamcore",
+        "sourceUpdated": 1776237649,
+        "sourceTextSha256": "7208384e21649f23890c9a1a040e3894f11e80e72ac5d5e46dd44f8c4de0bad0",
+        "lineNumber": 12,
+        "lineText": "『The Backrooms』と強く関連し、また[個人サイト]のモチーフがよく引用されます。",
+        "linkTitle": "個人サイト"
+      }
+    },
+    {
+      "sourcePageId": "69818c297d80a00ac75c1d5a",
+      "sourcePageTitle": "Dreamcore",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Dreamcore",
+      "linkTitle": "病みカワ",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69818c297d80a00ac75c1d5a",
+        "sourcePageTitle": "Dreamcore",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Dreamcore",
+        "sourceUpdated": 1776237649,
+        "sourceTextSha256": "7208384e21649f23890c9a1a040e3894f11e80e72ac5d5e46dd44f8c4de0bad0",
+        "lineNumber": 8,
+        "lineText": "関連：[Liminal space][病みカワ][Wacky Pomo]",
+        "linkTitle": "病みカワ"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "Balletcore",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 5,
+        "lineText": "[corporate memphis][Signalwave][Balletcore][Silicon Dreams]",
+        "linkTitle": "Balletcore"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "corporate memphis",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 5,
+        "lineText": "[corporate memphis][Signalwave][Balletcore][Silicon Dreams]",
+        "linkTitle": "corporate memphis"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "Signalwave",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 5,
+        "lineText": "[corporate memphis][Signalwave][Balletcore][Silicon Dreams]",
+        "linkTitle": "Signalwave"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "Silicon Dreams",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 5,
+        "lineText": "[corporate memphis][Signalwave][Balletcore][Silicon Dreams]",
+        "linkTitle": "Silicon Dreams"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "Superflat Pop",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 11,
+        "lineText": "[Superflat Pop]: Aesthetics Wiki上で日本産の漫画、商業イラストが包含されており細分化が必至です。また、国内において本美学への命名に芸術運動の「スーパーフラット」を冠する内容でないかもしれません。",
+        "linkTitle": "Superflat Pop"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "Weirdcore",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 8,
+        "lineText": "[スキューモフィズム][Weirdcore]",
+        "linkTitle": "Weirdcore"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "アキバ系",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 4,
+        "lineText": "[病みカワ][アキバ系][渋谷系]",
+        "linkTitle": "アキバ系"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "スキューモフィズム",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 8,
+        "lineText": "[スキューモフィズム][Weirdcore]",
+        "linkTitle": "スキューモフィズム"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "ゆっくり実況",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 13,
+        "lineText": "[ゆっくり実況]: 既にフォーマットそのものへの自己言及などは行われていますが、まだ体系的に書くことができません。もし詳しい人がいたらページを作っても良いです。",
+        "linkTitle": "ゆっくり実況"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "渋谷系",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 4,
+        "lineText": "[病みカワ][アキバ系][渋谷系]",
+        "linkTitle": "渋谷系"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "病みカワ",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 4,
+        "lineText": "[病みカワ][アキバ系][渋谷系]",
+        "linkTitle": "病みカワ"
+      }
+    },
+    {
+      "sourcePageId": "6982546ca315cce9205b32fb",
+      "sourcePageTitle": "メモ",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+      "linkTitle": "平成レトロ",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982546ca315cce9205b32fb",
+        "sourcePageTitle": "メモ",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%A1%E3%83%A2",
+        "sourceUpdated": 1779225813,
+        "sourceTextSha256": "224a6667d353ef37a9479e7467217a2e4abbd8f4fe9fe210317ae9cc454de435",
+        "lineNumber": 12,
+        "lineText": "[平成レトロ]:「Heisei Retro」はAesthetics Wikiを含め90年～2010年の日本への異国情緒を基調としており、国内での「平成レトロ」の受容を別途記述する必要があります。しかし、その内容は大半が個別にページを作成すべきかもしれません。",
+        "linkTitle": "平成レトロ"
+      }
+    },
+    {
+      "sourcePageId": "6982571c45c118bef36115bc",
+      "sourcePageTitle": "Concrete poetry",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Concrete%20poetry",
+      "linkTitle": "作字",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6982571c45c118bef36115bc",
+        "sourcePageTitle": "Concrete poetry",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Concrete%20poetry",
+        "sourceUpdated": 1775143614,
+        "sourceTextSha256": "6b837293ecc6eaf7d59345a89b3de91df0c11a699b4e44f83faeef3e7195dfb4",
+        "lineNumber": 15,
+        "lineText": "デザインの用語が転用される類似例として[作字]などがある。",
+        "linkTitle": "作字"
+      }
+    },
+    {
+      "sourcePageId": "6983649256f28b66cadc9cb1",
+      "sourcePageTitle": "Wacky Pomo",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Wacky%20Pomo",
+      "linkTitle": "アナログホラー",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6983649256f28b66cadc9cb1",
+        "sourcePageTitle": "Wacky Pomo",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Wacky%20Pomo",
+        "sourceUpdated": 1770632502,
+        "sourceTextSha256": "af57b789f8fd63923f1f6dc5a7fb08b9ea465ef04929032eb89c23715cfdbf6e",
+        "lineNumber": 13,
+        "lineText": "[アナログホラー]と合わさる場合、よく「突然不穏な発言を始める子供向けキャラクター」「時代背景にかかわらないVHSエフェクト」の特徴を有します。",
+        "linkTitle": "アナログホラー"
+      }
+    },
+    {
+      "sourcePageId": "69867e9eaeff9d1da3a9afe0",
+      "sourcePageTitle": "Vaporwave",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Vaporwave",
+      "linkTitle": "Future Funk",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69867e9eaeff9d1da3a9afe0",
+        "sourcePageTitle": "Vaporwave",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Vaporwave",
+        "sourceUpdated": 1775554849,
+        "sourceTextSha256": "ad2a2db382fe7e5b4974d5bbe3a1988d5272c6cc1229401de8d6a9bcff197183",
+        "lineNumber": 7,
+        "lineText": "[シティ・ポップ][Future Funk]",
+        "linkTitle": "Future Funk"
+      }
+    },
+    {
+      "sourcePageId": "69867e9eaeff9d1da3a9afe0",
+      "sourcePageTitle": "Vaporwave",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Vaporwave",
+      "linkTitle": "Seapunk",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69867e9eaeff9d1da3a9afe0",
+        "sourcePageTitle": "Vaporwave",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Vaporwave",
+        "sourceUpdated": 1775554849,
+        "sourceTextSha256": "ad2a2db382fe7e5b4974d5bbe3a1988d5272c6cc1229401de8d6a9bcff197183",
+        "lineNumber": 12,
+        "lineText": "美学ミームとしては古参であり、同じく初期に登場した[Seapunk]と混合したものを含め、その後台頭した・する様々な美学に引用されています。",
+        "linkTitle": "Seapunk"
+      }
+    },
+    {
+      "sourcePageId": "69867e9eaeff9d1da3a9afe0",
+      "sourcePageTitle": "Vaporwave",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Vaporwave",
+      "linkTitle": "シティ・ポップ",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69867e9eaeff9d1da3a9afe0",
+        "sourcePageTitle": "Vaporwave",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Vaporwave",
+        "sourceUpdated": 1775554849,
+        "sourceTextSha256": "ad2a2db382fe7e5b4974d5bbe3a1988d5272c6cc1229401de8d6a9bcff197183",
+        "lineNumber": 7,
+        "lineText": "[シティ・ポップ][Future Funk]",
+        "linkTitle": "シティ・ポップ"
+      }
+    },
+    {
+      "sourcePageId": "69883a09c6f9c1f3a59cf3f2",
+      "sourcePageTitle": "Kidcore",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Kidcore",
+      "linkTitle": "デコラ",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69883a09c6f9c1f3a59cf3f2",
+        "sourcePageTitle": "Kidcore",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Kidcore",
+        "sourceUpdated": 1770632515,
+        "sourceTextSha256": "59e83ba270c9aab7c6be6537454f99a6cc204741bf5a0b397c27a996f4e2a3b2",
+        "lineNumber": 11,
+        "lineText": "90年代の原宿ファッションのジャンル[デコラ]を間接的なルーツに、コロナ禍におけるY2Kリバイバルの中でTumblr美学として成立しました。",
+        "linkTitle": "デコラ"
+      }
+    },
+    {
+      "sourcePageId": "69884173fec62c0b1842cd15",
+      "sourcePageTitle": "地雷系",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E5%9C%B0%E9%9B%B7%E7%B3%BB",
+      "linkTitle": "病みカワ",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69884173fec62c0b1842cd15",
+        "sourcePageTitle": "地雷系",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E5%9C%B0%E9%9B%B7%E7%B3%BB",
+        "sourceUpdated": 1770548235,
+        "sourceTextSha256": "9cb542f70e658b1c24ae690f0be96b5e73a3128be70a39daa63f33ee847fe462",
+        "lineNumber": 12,
+        "lineText": "15年以降使われている俗語「地雷」と、ジャンルを表現する接尾辞「〇〇系」を合わせた名称で、ホストクラブ流行の文化圏で[病みカワ]の後身として登場しました。",
+        "linkTitle": "病みカワ"
+      }
+    },
+    {
+      "sourcePageId": "69884173fec62c0b1842cd15",
+      "sourcePageTitle": "地雷系",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E5%9C%B0%E9%9B%B7%E7%B3%BB",
+      "linkTitle": "量産系",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69884173fec62c0b1842cd15",
+        "sourcePageTitle": "地雷系",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E5%9C%B0%E9%9B%B7%E7%B3%BB",
+        "sourceUpdated": 1770548235,
+        "sourceTextSha256": "9cb542f70e658b1c24ae690f0be96b5e73a3128be70a39daa63f33ee847fe462",
+        "lineNumber": 13,
+        "lineText": "同時期にアイドルファンの文化圏における類似ジャンル[量産系]も登場していますが「その時期の流行服をすぐに着るために没個性的になる（≒量産された）人々」という意味合いであるために、こちらは時代によって指し示すファッションの傾向に変化が見られます。",
+        "linkTitle": "量産系"
+      }
+    },
+    {
+      "sourcePageId": "6988477c130b146cb582370e",
+      "sourcePageTitle": "Blingeecore",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Blingeecore",
+      "linkTitle": "Nightcore",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6988477c130b146cb582370e",
+        "sourcePageTitle": "Blingeecore",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Blingeecore",
+        "sourceUpdated": 1770632535,
+        "sourceTextSha256": "67ba4ca8682a434218e0169f5459bc5372453e29e53c3b4316a7cb1fd71018a4",
+        "lineNumber": 13,
+        "lineText": "[Nightcore]の映像等に見られる他、[Webcore]や他の[病みカワ]に手法が引用される場合があります。",
+        "linkTitle": "Nightcore"
+      }
+    },
+    {
+      "sourcePageId": "6988477c130b146cb582370e",
+      "sourcePageTitle": "Blingeecore",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Blingeecore",
+      "linkTitle": "病みカワ",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6988477c130b146cb582370e",
+        "sourcePageTitle": "Blingeecore",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Blingeecore",
+        "sourceUpdated": 1770632535,
+        "sourceTextSha256": "67ba4ca8682a434218e0169f5459bc5372453e29e53c3b4316a7cb1fd71018a4",
+        "lineNumber": 13,
+        "lineText": "[Nightcore]の映像等に見られる他、[Webcore]や他の[病みカワ]に手法が引用される場合があります。",
+        "linkTitle": "病みカワ"
+      }
+    },
+    {
+      "sourcePageId": "698852a15fd47bc6bf3b9c70",
+      "sourcePageTitle": "Xpiritualism",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Xpiritualism",
+      "linkTitle": "Jumpstyle Core",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "698852a15fd47bc6bf3b9c70",
+        "sourcePageTitle": "Xpiritualism",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Xpiritualism",
+        "sourceUpdated": 1770632306,
+        "sourceTextSha256": "ed0726453572c620787a0a36896b136e84ab883033cb1ed431b99f864672c7a7",
+        "lineNumber": 11,
+        "lineText": "3rd.world.eliteによって同名のハッシュタグが使用されYabujinによってジャンルの方向性を規定けられた後、2022年以降ではRobloxアニメーションやハードスタイル音楽を扱った同美学の[Brainrot]版のような性質を持つ [Yabujincore][Jumpstyle Core]が派生するなどしてきました。",
+        "linkTitle": "Jumpstyle Core"
+      }
+    },
+    {
+      "sourcePageId": "698852a15fd47bc6bf3b9c70",
+      "sourcePageTitle": "Xpiritualism",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Xpiritualism",
+      "linkTitle": "Yabujincore",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "698852a15fd47bc6bf3b9c70",
+        "sourcePageTitle": "Xpiritualism",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Xpiritualism",
+        "sourceUpdated": 1770632306,
+        "sourceTextSha256": "ed0726453572c620787a0a36896b136e84ab883033cb1ed431b99f864672c7a7",
+        "lineNumber": 11,
+        "lineText": "3rd.world.eliteによって同名のハッシュタグが使用されYabujinによってジャンルの方向性を規定けられた後、2022年以降ではRobloxアニメーションやハードスタイル音楽を扱った同美学の[Brainrot]版のような性質を持つ [Yabujincore][Jumpstyle Core]が派生するなどしてきました。",
+        "linkTitle": "Yabujincore"
+      }
+    },
+    {
+      "sourcePageId": "69891d58c1f7dc940640c241",
+      "sourcePageTitle": "Vectorheart",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/Vectorheart",
+      "linkTitle": "Neo-Vectorheart",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69891d58c1f7dc940640c241",
+        "sourcePageTitle": "Vectorheart",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/Vectorheart",
+        "sourceUpdated": 1770641851,
+        "sourceTextSha256": "d40d1055819b8b2fe1589575ac4b82b8016a16682eb7c52ece9be05b71457dee",
+        "lineNumber": 6,
+        "lineText": "[Neo-Vectorheart][フラットデザイン] [ローポリ] [Y2K]",
+        "linkTitle": "Neo-Vectorheart"
+      }
+    },
+    {
+      "sourcePageId": "6989cd430bff0079b10d0543",
+      "sourcePageTitle": "うごメモ風",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%86%E3%81%94%E3%83%A1%E3%83%A2%E9%A2%A8",
+      "linkTitle": "FLASH",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6989cd430bff0079b10d0543",
+        "sourcePageTitle": "うごメモ風",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%86%E3%81%94%E3%83%A1%E3%83%A2%E9%A2%A8",
+        "sourceUpdated": 1774725916,
+        "sourceTextSha256": "a06bac77b301951cdcaa9ab323d8099dce5e0cb959dbda2b7f1ac77f421dfbeb",
+        "lineNumber": 15,
+        "lineText": "また、[FLASH]全盛期の作品「小小系列」や「中中系列」の影響を受け、棒人間バトルといった様な、簡略化されたキャラを用い、動きの激しいアニメーションをする作品もある。",
+        "linkTitle": "FLASH"
+      }
+    },
+    {
+      "sourcePageId": "6989cd430bff0079b10d0543",
+      "sourcePageTitle": "うごメモ風",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%86%E3%81%94%E3%83%A1%E3%83%A2%E9%A2%A8",
+      "linkTitle": "ドット絵",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6989cd430bff0079b10d0543",
+        "sourcePageTitle": "うごメモ風",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%86%E3%81%94%E3%83%A1%E3%83%A2%E9%A2%A8",
+        "sourceUpdated": 1774725916,
+        "sourceTextSha256": "a06bac77b301951cdcaa9ab323d8099dce5e0cb959dbda2b7f1ac77f421dfbeb",
+        "lineNumber": 18,
+        "lineText": "ニコニコ動画の[https://www.nicovideo.jp/tag/PVつけてみた+うごメモ PVつけてみた]、YouTubeの[https://www.youtube.com/hashtag/うごメモ うごメモハッシュタグ]などの既存のオリジナルボカロ曲の二次創作PVと制作者層や表現の文脈が近い一方で、[ローポリ]や[ドット絵]のようなリバイバルの気運があるような印象があります[kofu.icon]",
+        "linkTitle": "ドット絵"
+      }
+    },
+    {
+      "sourcePageId": "6989cd430bff0079b10d0543",
+      "sourcePageTitle": "うごメモ風",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%86%E3%81%94%E3%83%A1%E3%83%A2%E9%A2%A8",
+      "linkTitle": "未定：うごメモ風オリジナルMV",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "6989cd430bff0079b10d0543",
+        "sourcePageTitle": "うごメモ風",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%81%86%E3%81%94%E3%83%A1%E3%83%A2%E9%A2%A8",
+        "sourceUpdated": 1774725916,
+        "sourceTextSha256": "a06bac77b301951cdcaa9ab323d8099dce5e0cb959dbda2b7f1ac77f421dfbeb",
+        "lineNumber": 7,
+        "lineText": "[未定：うごメモ風オリジナルMV]",
+        "linkTitle": "未定：うごメモ風オリジナルMV"
+      }
+    },
+    {
+      "sourcePageId": "698a9c71cc36670f47d8a6a9",
+      "sourcePageTitle": "ディスカッション",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3",
+      "linkTitle": "このProject（美学ウィキ）について。",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "698a9c71cc36670f47d8a6a9",
+        "sourcePageTitle": "ディスカッション",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3",
+        "sourceUpdated": 1770953185,
+        "sourceTextSha256": "96e20f82b00bf2b3a0b1bc5fefebe0068586470c64e8102889e0492dd66ec44d",
+        "lineNumber": 4,
+        "lineText": "　（また、メンバーになることに一切制限はないので、[このProject（美学ウィキ）について。]下部にある通り、できれば外部で情報提供や問題の指摘をするよりもこのプロジェクトに入ってくれると嬉しいです。ここは開かれています。）",
+        "linkTitle": "このProject（美学ウィキ）について。"
+      }
+    },
+    {
+      "sourcePageId": "698a9c71cc36670f47d8a6a9",
+      "sourcePageTitle": "ディスカッション",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3",
+      "linkTitle": "ディスカッション",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "698a9c71cc36670f47d8a6a9",
+        "sourcePageTitle": "ディスカッション",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3",
+        "sourceUpdated": 1770953185,
+        "sourceTextSha256": "96e20f82b00bf2b3a0b1bc5fefebe0068586470c64e8102889e0492dd66ec44d",
+        "lineNumber": 17,
+        "lineText": "[* WikiとしてのScrapboxは見づらい、議論がクローズドで公平性にかける]：小さな代案でありますが[ディスカッション]の作成をしました。さらにWikiの体裁のあるサービスへ移行するのは、このプロジェクトのあり方に反してしまう（情報源を一次ソースに頼る必要が増し、速度と変化を求められなくなる）ために現状のままとしています。",
+        "linkTitle": "ディスカッション"
+      }
+    },
+    {
+      "sourcePageId": "698b1e1235bb71f2a57f88a4",
+      "sourcePageTitle": "kofu",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/kofu",
+      "linkTitle": "member",
+      "resolution": "source-not-concept",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "698b1e1235bb71f2a57f88a4",
+        "sourcePageTitle": "kofu",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/kofu",
+        "sourceUpdated": 1770724886,
+        "sourceTextSha256": "ad27b4ce7962bab2c447f8b8be2d8a445331c002e53b48c7f9f63bb736a95a94",
+        "lineNumber": 4,
+        "lineText": "#member",
+        "linkTitle": "member"
+      }
+    },
+    {
+      "sourcePageId": "698d2d65a5de44b5882705f1",
+      "sourcePageTitle": "ジェネ系",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%B8%E3%82%A7%E3%83%8D%E7%B3%BB",
+      "linkTitle": "Technical Mono",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "698d2d65a5de44b5882705f1",
+        "sourcePageTitle": "ジェネ系",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%B8%E3%82%A7%E3%83%8D%E7%B3%BB",
+        "sourceUpdated": 1783585354,
+        "sourceTextSha256": "0db76cfcb851dfffefe0a39f5b3b1a4ce5d4debcbf36fa9a150a9160a4ed0765",
+        "lineNumber": 18,
+        "lineText": "[AI時代の美学 https://medium.com/design-bootcamp/aesthetics-in-the-ai-era-visual-web-design-trends-for-2026-5a0f75a10e98]において、[* Monospaceのフォントを利用したブルータリズムWebの美学][Technical Mono]、[* 監視カメラ映像をモチーフにし、画像認識表現などを含むこともある][Surveillance Aesthetic]等が挙げられ、日本語圏でもTama Design University講義プログラムの「[AI特論 第1回「逆行する美学」 https://www.youtube.com/watch?v=gmBo-C11we4]」で紹介された。",
+        "linkTitle": "Technical Mono"
+      }
+    },
+    {
+      "sourcePageId": "69935a632cdb207010fd495a",
+      "sourcePageTitle": "PV（ニコニコ動画）",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/PV%EF%BC%88%E3%83%8B%E3%82%B3%E3%83%8B%E3%82%B3%E5%8B%95%E7%94%BB%EF%BC%89",
+      "linkTitle": "文字PV",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69935a632cdb207010fd495a",
+        "sourcePageTitle": "PV（ニコニコ動画）",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/PV%EF%BC%88%E3%83%8B%E3%82%B3%E3%83%8B%E3%82%B3%E5%8B%95%E7%94%BB%EF%BC%89",
+        "sourceUpdated": 1771265725,
+        "sourceTextSha256": "09587208e33e8c9444a8a69a024c7a478e795ae1a0eb59baa76cc2d3d5c9e6ad",
+        "lineNumber": 13,
+        "lineText": "[文字PV]等で同語を使うコミュニティがある。",
+        "linkTitle": "文字PV"
+      }
+    },
+    {
+      "sourcePageId": "69998bc6c093689fd722efb7",
+      "sourcePageTitle": "ブルータリズム（Web）",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%BF%E3%83%AA%E3%82%BA%E3%83%A0%EF%BC%88Web%EF%BC%89",
+      "linkTitle": "Neo Brutalism",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69998bc6c093689fd722efb7",
+        "sourcePageTitle": "ブルータリズム（Web）",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%BF%E3%83%AA%E3%82%BA%E3%83%A0%EF%BC%88Web%EF%BC%89",
+        "sourceUpdated": 1771675014,
+        "sourceTextSha256": "6200be8d78d68df875d71ef53075eca648f52eb0a8e8b4fcd8e564f675be47c8",
+        "lineNumber": 10,
+        "lineText": "2010年代後半からは[Neo Brutalism]が登場している。",
+        "linkTitle": "Neo Brutalism"
+      }
+    },
+    {
+      "sourcePageId": "69c81457a3c48bf205fc9e81",
+      "sourcePageTitle": "インターネット風景系概念",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+      "linkTitle": "Blenderic",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69c81457a3c48bf205fc9e81",
+        "sourcePageTitle": "インターネット風景系概念",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+        "sourceUpdated": 1783936931,
+        "sourceTextSha256": "b4ae39632706ec357609942e9a213fe88ec3ad52d2ba9f02502460f6c70837d9",
+        "lineNumber": 12,
+        "lineText": "タグには[EchoSpace](Yurei Landscape,アシアタ,tellur, 2024年),[微風ゾーン](微風ゾーン, 2021年)といった風景の感覚、クロップを基調とし具体的な被写体が決まっている[StructuredSkyframe](都市構造, 2025年)[包写体](notarica, 2024年)など更に被写体に着目した[トマソン]的カテゴライズや、Blenderでモデリング・レンダリングされたような現実空間写真の表現である[Blenderic](notarica, 2025年)がよく利用されています。",
+        "linkTitle": "Blenderic"
+      }
+    },
+    {
+      "sourcePageId": "69c81457a3c48bf205fc9e81",
+      "sourcePageTitle": "インターネット風景系概念",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+      "linkTitle": "EchoSpace",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69c81457a3c48bf205fc9e81",
+        "sourcePageTitle": "インターネット風景系概念",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+        "sourceUpdated": 1783936931,
+        "sourceTextSha256": "b4ae39632706ec357609942e9a213fe88ec3ad52d2ba9f02502460f6c70837d9",
+        "lineNumber": 12,
+        "lineText": "タグには[EchoSpace](Yurei Landscape,アシアタ,tellur, 2024年),[微風ゾーン](微風ゾーン, 2021年)といった風景の感覚、クロップを基調とし具体的な被写体が決まっている[StructuredSkyframe](都市構造, 2025年)[包写体](notarica, 2024年)など更に被写体に着目した[トマソン]的カテゴライズや、Blenderでモデリング・レンダリングされたような現実空間写真の表現である[Blenderic](notarica, 2025年)がよく利用されています。",
+        "linkTitle": "EchoSpace"
+      }
+    },
+    {
+      "sourcePageId": "69c81457a3c48bf205fc9e81",
+      "sourcePageTitle": "インターネット風景系概念",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+      "linkTitle": "StructuredSkyframe",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69c81457a3c48bf205fc9e81",
+        "sourcePageTitle": "インターネット風景系概念",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+        "sourceUpdated": 1783936931,
+        "sourceTextSha256": "b4ae39632706ec357609942e9a213fe88ec3ad52d2ba9f02502460f6c70837d9",
+        "lineNumber": 12,
+        "lineText": "タグには[EchoSpace](Yurei Landscape,アシアタ,tellur, 2024年),[微風ゾーン](微風ゾーン, 2021年)といった風景の感覚、クロップを基調とし具体的な被写体が決まっている[StructuredSkyframe](都市構造, 2025年)[包写体](notarica, 2024年)など更に被写体に着目した[トマソン]的カテゴライズや、Blenderでモデリング・レンダリングされたような現実空間写真の表現である[Blenderic](notarica, 2025年)がよく利用されています。",
+        "linkTitle": "StructuredSkyframe"
+      }
+    },
+    {
+      "sourcePageId": "69c81457a3c48bf205fc9e81",
+      "sourcePageTitle": "インターネット風景系概念",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+      "linkTitle": "トマソン",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69c81457a3c48bf205fc9e81",
+        "sourcePageTitle": "インターネット風景系概念",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+        "sourceUpdated": 1783936931,
+        "sourceTextSha256": "b4ae39632706ec357609942e9a213fe88ec3ad52d2ba9f02502460f6c70837d9",
+        "lineNumber": 12,
+        "lineText": "タグには[EchoSpace](Yurei Landscape,アシアタ,tellur, 2024年),[微風ゾーン](微風ゾーン, 2021年)といった風景の感覚、クロップを基調とし具体的な被写体が決まっている[StructuredSkyframe](都市構造, 2025年)[包写体](notarica, 2024年)など更に被写体に着目した[トマソン]的カテゴライズや、Blenderでモデリング・レンダリングされたような現実空間写真の表現である[Blenderic](notarica, 2025年)がよく利用されています。",
+        "linkTitle": "トマソン"
+      }
+    },
+    {
+      "sourcePageId": "69c81457a3c48bf205fc9e81",
+      "sourcePageTitle": "インターネット風景系概念",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+      "linkTitle": "生活core",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69c81457a3c48bf205fc9e81",
+        "sourcePageTitle": "インターネット風景系概念",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+        "sourceUpdated": 1783936931,
+        "sourceTextSha256": "b4ae39632706ec357609942e9a213fe88ec3ad52d2ba9f02502460f6c70837d9",
+        "lineNumber": 20,
+        "lineText": "「[生活core]」はendenによって提唱された写真表現のジャンルです。",
+        "linkTitle": "生活core"
+      }
+    },
+    {
+      "sourcePageId": "69c81457a3c48bf205fc9e81",
+      "sourcePageTitle": "インターネット風景系概念",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+      "linkTitle": "微風ゾーン",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69c81457a3c48bf205fc9e81",
+        "sourcePageTitle": "インターネット風景系概念",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+        "sourceUpdated": 1783936931,
+        "sourceTextSha256": "b4ae39632706ec357609942e9a213fe88ec3ad52d2ba9f02502460f6c70837d9",
+        "lineNumber": 12,
+        "lineText": "タグには[EchoSpace](Yurei Landscape,アシアタ,tellur, 2024年),[微風ゾーン](微風ゾーン, 2021年)といった風景の感覚、クロップを基調とし具体的な被写体が決まっている[StructuredSkyframe](都市構造, 2025年)[包写体](notarica, 2024年)など更に被写体に着目した[トマソン]的カテゴライズや、Blenderでモデリング・レンダリングされたような現実空間写真の表現である[Blenderic](notarica, 2025年)がよく利用されています。",
+        "linkTitle": "微風ゾーン"
+      }
+    },
+    {
+      "sourcePageId": "69c81457a3c48bf205fc9e81",
+      "sourcePageTitle": "インターネット風景系概念",
+      "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+      "linkTitle": "包写体",
+      "resolution": "target-not-in-snapshot",
+      "evidence": {
+        "kind": "source-snapshot-line",
+        "locale": "ja",
+        "sourcePageId": "69c81457a3c48bf205fc9e81",
+        "sourcePageTitle": "インターネット風景系概念",
+        "sourceUrl": "https://scrapbox.io/AestheticsWiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E9%A2%A8%E6%99%AF%E7%B3%BB%E6%A6%82%E5%BF%B5",
+        "sourceUpdated": 1783936931,
+        "sourceTextSha256": "b4ae39632706ec357609942e9a213fe88ec3ad52d2ba9f02502460f6c70837d9",
+        "lineNumber": 12,
+        "lineText": "タグには[EchoSpace](Yurei Landscape,アシアタ,tellur, 2024年),[微風ゾーン](微風ゾーン, 2021年)といった風景の感覚、クロップを基調とし具体的な被写体が決まっている[StructuredSkyframe](都市構造, 2025年)[包写体](notarica, 2024年)など更に被写体に着目した[トマソン]的カテゴライズや、Blenderでモデリング・レンダリングされたような現実空間写真の表現である[Blenderic](notarica, 2025年)がよく利用されています。",
+        "linkTitle": "包写体"
+      }
+    }
+  ]
+}
