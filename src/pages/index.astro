@@ -1,0 +1,87 @@
+---
+import { createKnowledgeGraphModel } from "@noetheca/knowledge-engine";
+import KnowledgeGraph from "@noetheca/knowledge-engine/components/KnowledgeGraph.astro";
+import KnowledgeLayout from "@noetheca/knowledge-engine/components/KnowledgeLayout.astro";
+import { extractAestheticsContext } from "../lib/aesthetics-context";
+import { loadConceptEntries } from "../lib/concept-entries";
+import { siteLanguages } from "../lib/languages";
+import { conceptRoute, withBase } from "../lib/routes";
+import "../styles/aesthetics.css";
+
+const locale = "ja";
+const records = (await loadConceptEntries())
+  .filter(({ entry }) => entry.data.locale === locale)
+  .sort((left, right) =>
+    left.entry.data.title.localeCompare(right.entry.data.title, locale),
+  );
+const chronology: Record<string, number> = {};
+const thumbnails: Record<string, string> = {};
+const contextFacts: Record<
+  string,
+  readonly { label: string; value: string }[]
+> = {};
+for (const { concept, translation } of records) {
+  const id = concept.metadata.id;
+  const context = extractAestheticsContext(translation.body);
+  if (context.chronology !== undefined) {
+    chronology[id] = context.chronology;
+  }
+  if (context.thumbnail !== undefined) {
+    thumbnails[id] = context.thumbnail;
+  }
+  contextFacts[id] = [{ label: "時期", value: context.periodRaw }];
+}
+const graph = createKnowledgeGraphModel(
+  records.map(({ entry, concept }) => ({
+    id: concept.metadata.id,
+    title: entry.data.title,
+    summary: entry.data.summary,
+    status: entry.data.status,
+    href: withBase(conceptRoute(entry.data.locale, concept.metadata.id)),
+    prerequisites: concept.metadata.prerequisites,
+    related: concept.metadata.related,
+  })),
+);
+---
+
+<KnowledgeLayout
+  title="美学"
+  summary="Internet aestheticsと日本語圏の美学ミームを、関係と文脈からたどるnoethecaの知識領域です。"
+  locale={locale}
+  domain="aesthetics"
+  languages={siteLanguages}
+  immersive
+>
+  <KnowledgeGraph
+    graph={graph}
+    chronology={chronology}
+    thumbnails={thumbnails}
+    contextFacts={contextFacts}
+    controls
+    locale={locale}
+    title="美学 文脈マップ"
+    relationshipMode="contextual"
+    initialView="responsive"
+    labels={{
+      viewportLabel: "美学の関係と文脈をたどるマップ",
+      legend: "実線は「先行する美学・背景 → 後続する美学・文脈」を示します",
+      relatedLegend: "矢印のない実線は、美学に結びつく同時期・関連する文脈を示します",
+      inspectorLabel: "選択した美学の詳細",
+      accessibleList: "アクセシブルな美学一覧",
+      knowledgeList: "美学一覧",
+      articleLabel: "美学の記事",
+      articleEyebrow: "美学の記事",
+      navigationLabel: "美学の関係と文脈",
+      selectedKnowledge: "選択した美学",
+      prerequisites: "先行する美学・背景",
+      noPrerequisites: "登録されていません",
+      dependents: "後続する美学・文脈",
+      noDependents: "登録されていません",
+      related: "同時期・関連する美学・文脈",
+      learn: "この美学を読む",
+      previous: "先行する美学・背景",
+      next: "同時期・関連する美学・文脈",
+      noKnowledge: "該当する美学はありません",
+    }}
+  />
+</KnowledgeLayout>

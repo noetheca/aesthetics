@@ -1,0 +1,60 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+import {
+  buildConceptId,
+  classifyPage,
+  convertScrapboxLine,
+  normalizeTitle,
+  sourcePageUrl,
+} from "../scripts/import-cosense.mjs";
+
+test("normalizes titles without using them as IDs", () => {
+  assert.equal(normalizeTitle("Liminal_space"), "liminal space");
+  assert.equal(
+    buildConceptId("6977addd521bdf0ca3c5a23f"),
+    "aesthetics/scrapbox/6977addd521bdf0ca3c5a23f",
+  );
+  assert.throws(() => buildConceptId("Liminal space"));
+});
+
+test("classifies operational, profile, stub, and content pages", () => {
+  assert.equal(
+    classifyPage({ title: "settings", lines: ["settings"], charsCount: 500 }),
+    "project-meta",
+  );
+  assert.equal(
+    classifyPage({ title: "kofu", lines: ["kofu", "#member"], charsCount: 500 }),
+    "profile",
+  );
+  assert.equal(
+    classifyPage({ title: "未定：名称", lines: ["未定"], charsCount: 500 }),
+    "stub",
+  );
+  assert.equal(
+    classifyPage({ title: "Dreamcore", lines: ["Dreamcore"], charsCount: 500 }),
+    "content",
+  );
+});
+
+test("converts headings and links without embedding external media", () => {
+  assert.equal(convertScrapboxLine("[** 概要]"), "## 概要");
+  assert.equal(
+    convertScrapboxLine("[参考 https://example.com/image.png]"),
+    "[参考](https://example.com/image.png)",
+  );
+  assert.equal(
+    convertScrapboxLine("[Dreamcore]"),
+    `[Dreamcore](${sourcePageUrl("AestheticsWiki", "Dreamcore")})`,
+  );
+  assert.doesNotMatch(
+    convertScrapboxLine("[https://example.com/image.png]"),
+    /!\[/u,
+  );
+});
+
+test("escapes raw HTML from imported lines", () => {
+  assert.equal(
+    convertScrapboxLine("<script>alert(1)</script>"),
+    "&lt;script&gt;alert(1)&lt;/script&gt;",
+  );
+});

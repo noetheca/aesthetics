@@ -1,0 +1,196 @@
+---
+import ConceptRelations from "@noetheca/knowledge-engine/components/ConceptRelations.astro";
+import KnowledgeLayout from "@noetheca/knowledge-engine/components/KnowledgeLayout.astro";
+import {
+  getUiStrings,
+  type Concept,
+  type KnowledgeLanguageOption,
+} from "@noetheca/knowledge-engine";
+import { render, type CollectionEntry } from "astro:content";
+import { loadConceptEntries } from "../lib/concept-entries";
+import { siteLanguages } from "../lib/languages";
+import { conceptRoute, withBase } from "../lib/routes";
+import "../styles/aesthetics.css";
+
+interface Props {
+  entry: CollectionEntry<"concepts">;
+  concept: Concept;
+  relationTitles: Record<string, string>;
+  relatedIds: string[];
+  languages: KnowledgeLanguageOption[];
+}
+
+export async function getStaticPaths() {
+  const relationPairKey = (left: string, right: string): string =>
+    [left, right].sort().join("\u0000");
+  const records = await loadConceptEntries();
+  const translations = new Map(
+    records.map(({ entry, concept }) => [
+      `${concept.metadata.id}:${entry.data.locale}`,
+      entry,
+    ]),
+  );
+  const conceptIds = new Set(records.map(({ concept }) => concept.metadata.id));
+  const prerequisitePairs = new Set<string>();
+  for (const { concept } of records) {
+    for (const prerequisiteId of concept.metadata.prerequisites) {
+      prerequisitePairs.add(
+        relationPairKey(concept.metadata.id, prerequisiteId),
+      );
+    }
+  }
+  const relatedByConcept = new Map<string, Set<string>>(
+    [...conceptIds].map((conceptId) => [conceptId, new Set<string>()]),
+  );
+  for (const { concept } of records) {
+    const conceptId = concept.metadata.id;
+    for (const relatedId of concept.metadata.related) {
+      if (
+        relatedId === conceptId ||
+        !conceptIds.has(relatedId) ||
+        prerequisitePairs.has(relationPairKey(conceptId, relatedId))
+      ) {
+        continue;
+      }
+      relatedByConcept.get(conceptId)?.add(relatedId);
+      relatedByConcept.get(relatedId)?.add(conceptId);
+    }
+  }
+
+  return records.map(({ entry, concept }) => {
+    const conceptId = concept.metadata.id;
+    const relatedIds = [...(relatedByConcept.get(conceptId) ?? [])].sort(
+      (left, right) => {
+        const leftTitle =
+          translations.get(`${left}:${entry.data.locale}`)?.data.title ?? left;
+        const rightTitle =
+          translations.get(`${right}:${entry.data.locale}`)?.data.title ?? right;
+        return leftTitle.localeCompare(rightTitle, entry.data.locale);
+      },
+    );
+    const relationTitles = Object.fromEntries(
+      [...concept.metadata.prerequisites, ...relatedIds]
+        .map((id) => [
+          id,
+          translations.get(`${id}:${entry.data.locale}`)?.data.title,
+        ])
+        .filter((pair): pair is [string, string] => pair[1] !== undefined),
+    );
+    const languages = siteLanguages.map((language) => ({
+      ...language,
+      href: translations.has(`${conceptId}:${language.locale}`)
+        ? withBase(conceptRoute(language.locale, conceptId))
+        : undefined,
+    }));
+    return {
+      params: {
+        slug: conceptRoute(entry.data.locale, conceptId),
+      },
+      props: { entry, concept, relationTitles, relatedIds, languages },
+    };
+  });
+}
+
+const { entry, concept, relationTitles, relatedIds, languages } = Astro.props;
+const { Content } = await render(entry);
+const locale = entry.data.locale;
+const ui = getUiStrings(locale).article;
+
+function relation(id: string) {
+  const title = relationTitles[id];
+  return {
+    id,
+    title,
+    href: title ? withBase(conceptRoute(locale, id)) : undefined,
+  };
+}
+
+const sourcePath = entry.filePath?.replaceAll("\\", "/");
+const editUrl = sourcePath
+  ? `https://github.com/noetheca/aesthetics/edit/main/${sourcePath}`
+  : "https://github.com/noetheca/aesthetics";
+---
+
+<KnowledgeLayout
+  title={entry.data.title}
+  summary={entry.data.summary}
+  locale={locale}
+  domain="aesthetics"
+  languages={languages}
+>
+  <article>
+    <p class="eyebrow">{concept.metadata.id.replaceAll("/", " / ")}</p>
+    <h1>{entry.data.title}</h1>
+    <p class="lede">{entry.data.summary}</p>
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    <ConceptRelations
+      prerequisites={concept.metadata.prerequisites.map(relation)}
+      related={relatedIds.map(relation)}
+      mode="contextual"
+      ariaLabel="美学の関係と文脈"
+      labels={{
+        prerequisites: "先行する美学・背景",
+        related: "同時期・関連する美学・文脈",
+        empty: ui.noRelations,
+      }}
+    />
+
+    <section aria-labelledby="sources">
+      <h2 id="sources">{ui.sources}</h2>
+      {
+        entry.data.sources.length > 0 ? (
+          <ul>
+            {entry.data.sources.map((source) => (
+              <li>
+                {typeof source === "string" ? (
+                  <a href={source}>{source}</a>
+                ) : (
+                  <>
+                    <a href={source.url}>{source.title}</a>
+                    {source.note && <span> — {source.note}</span>}
+                  </>
+                )}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="muted">{ui.sourcesPending}</p>
+        )
+      }
+      <p class="muted">
+        移植本文は
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+          CC BY-SA 4.0
+        </a>
+        です。外部画像・動画・リンク先は対象外です。
+      </p>
+    </section>
+
+    <p class="content-state">
+      <a href={editUrl}>GitHub</a>
+      <a href="https://github.com/noetheca/aesthetics/issues/new/choose">
+        {ui.reportIssue}
+      </a>
+    </p>
+  </article>
+</KnowledgeLayout>
+
+<style>
+  .content-state {
+    align-items: center;
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+    margin-block: 3rem 0;
+    padding-block: 0.8rem 0;
+  }
+
+  .prose {
+    margin-top: 2.5rem;
+  }
+</style>
