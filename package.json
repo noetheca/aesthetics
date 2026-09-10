@@ -24,7 +24,7 @@
   "dependencies": {
     "@astrojs/markdown-remark": "7.2.2",
     "@noetheca/knowledge-engine": "link:../knowledge-engine",
-    "astro": "7.1.6"
+    "astro": "7.2.8"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.10",
